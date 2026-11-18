@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #15193A;
+    background: #f8f9fc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background: #101E59;
+    color: white;
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 20px 6%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #F3AE31;
+}
+
+.header-link {
+    justify-self: end;
+}
+
+.header-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header-link a:hover {
+    color: #F3AE31;
+}
+
+
+/* ================= SIGN UP PAGE ================= */
+
+.signup-page {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 6%;
+}
+
+
+/* ================= CARD ================= */
+
+.signup-card {
+    width: 100%;
+    max-width: 470px;
+    background: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+    padding: 35px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .06);
+    align-self: flex-start;
+}
+
+
+/* ================= HEADING ================= */
+
+.signup-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #F3AE31;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.signup-heading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.signup-heading p:last-child {
+    color: #777B91;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ================= FORM ================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #45495f;
+}
+
+.form-group input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 0 12px;
+    outline: none;
+    color: #15193A;
+    background: white;
+    font-size: 12px;
+    transition: .2s;
+}
+
+.form-group input:focus {
+    border-color: #2634A0;
+    box-shadow: 0 0 0 3px rgba(38, 52, 160, .08);
+}
+
+.form-group small {
+    color: #888;
+    font-size: 9px;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.form-message {
+    min-height: 18px;
+    text-align: center;
+    font-size: 11px;
+    margin: 3px 0 12px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.signup-button {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 7px;
+    background: #F3AE31;
+    color: #15193A;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.signup-button:hover {
+    background: #e49f20;
+}
+
+
+/* ================= LOGIN LINK ================= */
+
+.login-text {
+    text-align: center;
+    color: #777B91;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.login-text a {
+    color: #2634A0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #101E59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        grid-template-columns: 1fr auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .header-link a {
+        font-size: 11px;
+    }
+
+    .signup-page {
+        padding: 35px 5%;
+    }
+
+    .signup-card {
+        padding: 25px 20px;
+    }
+
+    .signup-heading h1 {
+        font-size: 27px;
+    }
+
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stays | StayNest</title>
+<link href="./stays.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./site-effects.css">
+</head>
+<body>
+<header class="header">
+<nav class="navbar">
+<a class="logo" href="index.html">
+            🏠 StayNest
+        </a>
+<ul class="nav-links">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="destinations.html">Destinations</a>
+</li>
+<li class="active">
+<a href="stays.html">Stays</a>
+</li>
+<li>
+<a href="deals.html">Deals</a>
+</li>
+<li>
+<a href="find-booking.html">Find a Booking</a>
+</li>
+<li>
+<a href="contact.html">Contact</a>
+</li>
+</ul>
+<ul class="accounts">
+<li>
+<a href="favorites.html">♡ Favorites</a>
+</li>
+<li>
+<a href="login.html">Sign in</a>
+</li>
+<li class="menu">
+                ☰
+            </li>
+</ul>
+</nav>
+</header>
+<!-- ================= HERO ================= -->
+<section class="stays-hero">
+<div class="hero-content">
+<p class="eyebrow">
+            STAYNEST COLLECTION
+        </p>
+<h1>
+            Find a stay you'll love
+        </h1>
+<p>
+            Browse handpicked hotels, resorts, villas and apartments
+            around the world.
+        </p>
+</div>
+</section>
+<!-- ================= SEARCH ================= -->
+<section class="search-wrapper">
+<div class="search-box">
+<div class="search-field">
+<img alt="Location" src="./Assets/location.svg"/>
+<div>
+<label for="destinationSearch">
+                    Where
+                </label>
+<input id="destinationSearch" placeholder="Destination or stay" type="text"/>
+</div>
+</div>
+<div class="search-field">
+<img alt="Calendar" src="./Assets/calender.svg"/>
+<div>
+<label for="checkIn">
+                    Check in
+                </label>
+<input id="checkIn" type="date"/>
+</div>
+</div>
+<div class="search-field">
+<img alt="Calendar" src="./Assets/calender.svg"/>
+<div>
+<label for="checkOut">
+                    Check out
+                </label>
+<input id="checkOut" type="date"/>
+</div>
+</div>
+<div class="search-field">
+<img alt="Guests" src="./Assets/person.svg"/>
+<div>
+<label for="guests">
+                    Guests
+                </label>
+<select id="guests">
+<option>1 Adult • 0 Children</option>
+<option selected="">2 Adults • 0 Children</option>
+<option>2 Adults • 1 Child</option>
+<option>2 Adults • 2 Children</option>
+<option>3 Adults • 0 Children</option>
+<option>4 Adults • 0 Children</option>
+</select>
+</div>
+</div>
+<button id="searchButton">
+            Search
+        </button>
+</div>
+</section>
+<!-- ================= STAYS ================= -->
+<main class="stays-section">
+<div class="section-top">
+<div>
+<p class="small-title">
+                OUR COLLECTION
+            </p>
+<h2 id="resultsTitle">
+                All stays
+            </h2>
+<p id="resultsCount">
+                5 properties found
+            </p>
+</div>
+<div class="sort-area">
+<label for="sort">
+                Sort by
+            </label>
+<select id="sort">
+<option value="popular">
+                    Popular
+                </option>
+<option value="price-low">
+                    Price: Low to High
+                </option>
+<option value="price-high">
+                    Price: High to Low
+                </option>
+<option value="rating">
+                    Highest Rated
+                </option>
+</select>
+</div>
+</div>
+<div class="content-layout">
+<!-- FILTERS -->
+<aside class="filters">
+<h3>
+                Filters
+            </h3>
+<div class="filter-group">
+<h4>
+                    Property type
+                </h4>
+<label>
+<input name="propertyType" type="checkbox" value="Hotel"/>
+                    Hotel
+                </label>
+<label>
+<input name="propertyType" type="checkbox" value="Resort"/>
+                    Resort
+                </label>
+<label>
+<input name="propertyType" type="checkbox" value="Villa"/>
+                    Villa
+                </label>
+<label>
+<input name="propertyType" type="checkbox" value="Apartment"/>
+                    Apartment
+                </label>
+</div>
+<div class="filter-group">
+<h4>
+                    Rating
+                </h4>
+<label>
+<input name="rating" type="radio" value="4"/>
+                    4.0+
+                </label>
+<label>
+<input name="rating" type="radio" value="4.5"/>
+                    4.5+
+                </label>
+<label>
+<input name="rating" type="radio" value="4.8"/>
+                    4.8+
+                </label>
+</div>
+<div class="filter-group">
+<h4>
+                    Price per night
+                </h4>
+<label>
+<input name="price" type="radio" value="150"/>
+                    Up to $150
+                </label>
+<label>
+<input name="price" type="radio" value="250"/>
+                    Up to $250
+                </label>
+<label>
+<input name="price" type="radio" value="400"/>
+                    Up to $400
+                </label>
+</div>
+<button id="clearFilters">
+                Clear filters
+            </button>
+</aside>
+<!-- STAY CARDS -->
+<section>
+<div class="stays-grid" id="staysGrid">
+<!-- BALI -->
+<article class="stay-card" data-location="Bali, Indonesia" data-name="Oceanview Resort &amp; Spa" data-price="120" data-rating="4.8" data-type="Resort">
+<div class="stay-image">
+<img alt="Oceanview Resort &amp; Spa" src="./Assets/ocean_view.jpeg"/>
+<span class="badge">
+                            Popular
+                        </span>
+<button aria-label="Add to favorites" class="favorite">
+                            ♡
+                        </button>
+</div>
+<div class="stay-content">
+<h3>
+                            Oceanview Resort &amp; Spa
+                        </h3>
+<p class="location">
+                            Bali, Indonesia
+                        </p>
+<p class="rating">
+<span>★★★★★</span>
+                            4.8
+                            <small>(124 reviews)</small>
+</p>
+<div class="card-bottom">
+<p class="price">
+                                $120
+                                <small>/ night</small>
+</p>
+<div class="card-actions">
+<button class="view-stay">
+                                    View Stay
+                                </button>
+<button class="book-stay">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</article>
+<!-- PARIS -->
+<article class="stay-card" data-location="Paris, France" data-name="The Grand Paris Hotel" data-price="210" data-rating="4.7" data-type="Hotel">
+<div class="stay-image">
+<img alt="The Grand Paris Hotel" src="./Assets/grand_paris.jpeg"/>
+<button aria-label="Add to favorites" class="favorite">
+                            ♡
+                        </button>
+</div>
+<div class="stay-content">
+<h3>
+                            The Grand Paris Hotel
+                        </h3>
+<p class="location">
+                            Paris, France
+                        </p>
+<p class="rating">
+<span>★★★★★</span>
+                            4.7
+                            <small>(98 reviews)</small>
+</p>
+<div class="card-bottom">
+<p class="price">
+                                $210
+                                <small>/ night</small>
+</p>
+<div class="card-actions">
+<button class="view-stay">
+                                    View Stay
+                                </button>
+<button class="book-stay">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</article>
+<!-- MALDIVES -->
+<article class="stay-card" data-location="Maldives" data-name="Maldives Paradise" data-price="350" data-rating="4.9" data-type="Resort">
+<div class="stay-image">
+<img alt="Maldives Paradise" src="./Assets/maldavies_paradise_.jpeg"/>
+<span class="badge">
+                            Top rated
+                        </span>
+<button aria-label="Add to favorites" class="favorite">
+                            ♡
+                        </button>
+</div>
+<div class="stay-content">
+<h3>
+                            Maldives Paradise
+                        </h3>
+<p class="location">
+                            Maldives
+                        </p>
+<p class="rating">
+<span>★★★★★</span>
+                            4.9
+                            <small>(157 reviews)</small>
+</p>
+<div class="card-bottom">
+<p class="price">
+                                $350
+                                <small>/ night</small>
+</p>
+<div class="card-actions">
+<button class="view-stay">
+                                    View Stay
+                                </button>
+<button class="book-stay">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</article>
+<!-- DUBAI -->
+<article class="stay-card" data-location="Dubai, UAE" data-name="Luxury Stay Dubai" data-price="160" data-rating="4.6" data-type="Hotel">
+<div class="stay-image">
+<img alt="Luxury Stay Dubai" src="./Assets/luxury_stay_.jpeg"/>
+<button aria-label="Add to favorites" class="favorite">
+                            ♡
+                        </button>
+</div>
+<div class="stay-content">
+<h3>
+                            Luxury Stay Dubai
+                        </h3>
+<p class="location">
+                            Dubai, UAE
+                        </p>
+<p class="rating">
+<span>★★★★★</span>
+                            4.6
+                            <small>(83 reviews)</small>
+</p>
+<div class="card-bottom">
+<p class="price">
+                                $160
+                                <small>/ night</small>
+</p>
+<div class="card-actions">
+<button class="view-stay">
+                                    View Stay
+                                </button>
+<button class="book-stay">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</article>
+<!-- NEW YORK -->
+<article class="stay-card" data-location="New York, USA" data-name="Blue Horizon Hotel" data-price="190" data-rating="4.7" data-type="Hotel">
+<div class="stay-image">
+<img alt="Blue Horizon Hotel" src="./Assets/blue_horizon.jpeg"/>
+<button aria-label="Add to favorites" class="favorite">
+                            ♡
+                        </button>
+</div>
+<div class="stay-content">
+<h3>
+                            Blue Horizon Hotel
+                        </h3>
+<p class="location">
+                            New York, USA
+                        </p>
+<p class="rating">
+<span>★★★★★</span>
+                            4.7
+                            <small>(112 reviews)</small>
+</p>
+<div class="card-bottom">
+<p class="price">
+                                $190
+                                <small>/ night</small>
+</p>
+<div class="card-actions">
+<button class="view-stay">
+                                    View Stay
+                                </button>
+<button class="book-stay">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</article>
+
+<!-- KYOTO STAYS -->
+<article class="stay-card" data-location="Kyoto, Japan" data-name="Kyoto Garden Ryokan" data-price="145" data-rating="4.9" data-type="Resort">
+<div class="stay-image"><img alt="Kyoto Garden Ryokan" src="https://images.unsplash.com/photo-1769643207226-dcc20cbe7d70?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Kyoto Garden Ryokan</h3><p class="location">Kyoto, Japan</p><p class="rating"><span>★★★★★</span> 4.9 <small>(186 reviews)</small></p><div class="card-bottom"><p class="price">$145 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Kyoto, Japan" data-name="Gion Serenity Hotel" data-price="175" data-rating="4.8" data-type="Hotel">
+<div class="stay-image"><img alt="Gion Serenity Hotel" src="https://images.unsplash.com/photo-1758970081655-a9c08d367e68?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Gion Serenity Hotel</h3><p class="location">Kyoto, Japan</p><p class="rating"><span>★★★★★</span> 4.8 <small>(143 reviews)</small></p><div class="card-bottom"><p class="price">$175 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Kyoto, Japan" data-name="Arashiyama Bamboo Retreat" data-price="130" data-rating="4.7" data-type="Resort">
+<div class="stay-image"><img alt="Arashiyama Bamboo Retreat" src="https://images.unsplash.com/photo-1742519077728-f40bd20f7d52?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Arashiyama Bamboo Retreat</h3><p class="location">Kyoto, Japan</p><p class="rating"><span>★★★★★</span> 4.7 <small>(121 reviews)</small></p><div class="card-bottom"><p class="price">$130 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Kyoto, Japan" data-name="Kyoto Heritage Suites" data-price="220" data-rating="4.9" data-type="Hotel">
+<div class="stay-image"><img alt="Kyoto Heritage Suites" src="https://images.unsplash.com/photo-1740047957758-24c66b4468e4?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Kyoto Heritage Suites</h3><p class="location">Kyoto, Japan</p><p class="rating"><span>★★★★★</span> 4.9 <small>(204 reviews)</small></p><div class="card-bottom"><p class="price">$220 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<!-- CAPE TOWN STAYS -->
+<article class="stay-card" data-location="Cape Town, South Africa" data-name="Table Mountain View Hotel" data-price="155" data-rating="4.8" data-type="Hotel">
+<div class="stay-image"><img alt="Table Mountain View Hotel" src="https://images.unsplash.com/photo-1641375741322-7d90777d009c?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Table Mountain View Hotel</h3><p class="location">Cape Town, South Africa</p><p class="rating"><span>★★★★★</span> 4.8 <small>(167 reviews)</small></p><div class="card-bottom"><p class="price">$155 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Cape Town, South Africa" data-name="Cape Point Ocean Lodge" data-price="190" data-rating="4.9" data-type="Resort">
+<div class="stay-image"><img alt="Cape Point Ocean Lodge" src="https://images.unsplash.com/photo-1709551008598-3381fee87365?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Cape Point Ocean Lodge</h3><p class="location">Cape Town, South Africa</p><p class="rating"><span>★★★★★</span> 4.9 <small>(231 reviews)</small></p><div class="card-bottom"><p class="price">$190 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Cape Town, South Africa" data-name="Sea Point Horizon Hotel" data-price="140" data-rating="4.7" data-type="Hotel">
+<div class="stay-image"><img alt="Sea Point Horizon Hotel" src="https://images.unsplash.com/photo-1657002682435-5493da643e65?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>Sea Point Horizon Hotel</h3><p class="location">Cape Town, South Africa</p><p class="rating"><span>★★★★★</span> 4.7 <small>(118 reviews)</small></p><div class="card-bottom"><p class="price">$140 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+<article class="stay-card" data-location="Cape Town, South Africa" data-name="V&A Waterfront Suites" data-price="210" data-rating="4.8" data-type="Apartment">
+<div class="stay-image"><img alt="V&amp;A Waterfront Suites" src="https://images.unsplash.com/photo-1692690134767-90bcc75d5653?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/><button aria-label="Add to favorites" class="favorite">♡</button></div>
+<div class="stay-content"><h3>V&amp;A Waterfront Suites</h3><p class="location">Cape Town, South Africa</p><p class="rating"><span>★★★★★</span> 4.8 <small>(192 reviews)</small></p><div class="card-bottom"><p class="price">$210 <small>/ night</small></p><div class="card-actions"><button class="view-stay">View Stay</button><button class="book-stay">Book Now</button></div></div></div>
+</article>
+</div>
+<div class="pagination" id="staysPagination"></div>
+</section>
+</div>
+</main>
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+<div class="newsletter-icon">
+        ✉
+    </div>
+<div class="newsletter-text">
+<h2>
+            Get travel inspiration
+        </h2>
+<p>
+            Subscribe for deals, new destinations and travel tips.
+        </p>
+</div>
+<form id="newsletterForm">
+<input id="newsletterEmail" placeholder="Your email address" required="" type="email"/>
+<button type="submit">
+            Subscribe
+        </button>
+</form>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="footer-main">
+<div class="footer-brand">
+<a href="index.html">
+                🏠 StayNest
+            </a>
+<p>
+                Discover beautiful places to stay around the world.
+            </p>
+</div>
+<div class="footer-column">
+<h4>
+                Company
+            </h4>
+<a href="about.html">
+                About
+            </a>
+<a href="#">
+                Careers
+            </a>
+<a href="#">
+                Press
+            </a>
+<a href="#">
+                Blog
+            </a>
+</div>
+<div class="footer-column">
+<h4>
+                Explore
+            </h4>
+<a href="destinations.html">
+                Destinations
+            </a>
+<a href="stays.html">
+                Stays
+            </a>
+<a href="deals.html">
+                Deals
+            </a>
+</div>
+<div class="footer-column">
+<h4>
+                Support
+            </h4>
+<a href="contact.html">
+                Contact
+            </a>
+<a href="#">
+                Help Center
+            </a>
+<a href="#">
+                FAQs
+            </a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>
+            © 2026 StayNest. All rights reserved.
+        </span>
+<span>
+            Travel better. Stay better.
+        </span>
+</div>
+</footer>
+<script src="site-effects.js"></script>
+<script src="auth-nav.js"></script>
+<script src="./stays.js"></script>
+</body>
+</html>

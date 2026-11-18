@@ -1,0 +1,98 @@
+/* =====================================================
+   StayNest — Shared motion system
+   Keeps page animations consistent across the site.
+===================================================== */
+
+:root {
+    --staynest-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --staynest-ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hero entrance */
+@keyframes staynestHeroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site-hero-enter {
+    animation: staynestHeroFadeUp 0.7s var(--staynest-ease) both;
+}
+
+.site-hero-enter-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.site-hero-enter-delay-2 {
+    animation-delay: 0.25s;
+}
+
+.site-hero-enter-delay-3 {
+    animation-delay: 0.4s;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 0.6s var(--staynest-ease),
+        transform 0.6s var(--staynest-ease);
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.5s var(--staynest-ease),
+        transform 0.5s var(--staynest-ease);
+    will-change: opacity, transform;
+}
+
+.reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+.reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 480ms; }
+.reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 560ms; }
+
+/* Small entrance for standalone cards/forms on pages without hero sections */
+.site-card-entrance {
+    animation: staynestHeroFadeUp 0.65s var(--staynest-ease) 0.08s both;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal,
+    .reveal-stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals | StayNest</title>
+  <link rel="stylesheet" href="deals.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">🏠 StayNest</a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="stays.html">Stays</a>
+      <a href="deals.html" class="active">Deals</a>
+      <a href="find-booking.html">Find a Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="favorites.html" class="favorites-link">♡ Favorites <span id="favoriteCount">0</span></a>
+      <a href="login.html" id="accountLink">◯ Sign in</a>
+      <button class="menu" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="deals-hero">
+    <div class="hero-content">
+      <span class="eyebrow">SAVE MORE ON YOUR NEXT TRIP</span>
+      <h1>Amazing stays.<br>Unbeatable deals.</h1>
+      <p>Discover exclusive offers and limited-time discounts on some of our best stays around the world.</p>
+      <a href="#deals" class="hero-btn">Explore deals</a>
+    </div>
+  </section>
+
+  <section class="deals-section" id="deals">
+    <div class="section-heading">
+      <span class="section-label">SPECIAL OFFERS</span>
+      <h2>Deals you don't want to miss</h2>
+      <p>Grab these limited-time offers before they disappear.</p>
+    </div>
+
+    <div class="deal-controls" id="dealControls">
+      <div class="search-wrap">
+        <label for="dealSearch">Search deals</label>
+        <input type="search" id="dealSearch" placeholder="Search by stay or destination">
+      </div>
+
+      <div class="control-wrap">
+        <label for="dealFilter">Type</label>
+        <select id="dealFilter">
+          <option value="all">All deals</option>
+          <option value="resort">Resorts</option>
+          <option value="hotel">Hotels</option>
+          <option value="villa">Villas</option>
+          <option value="apartment">Apartments</option>
+        </select>
+      </div>
+
+      <div class="control-wrap">
+        <label for="dealSort">Sort</label>
+        <select id="dealSort">
+          <option value="featured">Featured</option>
+          <option value="discount">Biggest discount</option>
+          <option value="price">Lowest price</option>
+          <option value="rating">Highest rating</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="deals-grid" id="dealCards">
+
+      <article class="deal-card"
+        data-name="Oceanview Resort & Spa"
+        data-location="Bali, Indonesia"
+        data-type="resort"
+        data-discount="35"
+        data-price="78"
+        data-regular-price="120"
+        data-rating="4.8"
+        data-featured="5">
+        <div class="deal-image-wrap">
+          <img src="./Assets/ocean_view.jpeg" alt="Oceanview Resort & Spa">
+          <span class="discount-badge">35% OFF</span>
+          <button class="favorite-btn" type="button" aria-label="Add Oceanview Resort & Spa to favorites">♡</button>
+        </div>
+        <div class="deal-body">
+          <span class="deal-tag">LIMITED DEAL</span>
+          <h3>Oceanview Resort & Spa</h3>
+          <p class="location">📍 Bali, Indonesia</p>
+          <div class="rating">★ <strong>4.8</strong> <span>(324 reviews)</span></div>
+          <div class="price-row">
+            <div>
+              <span class="old-price">$120</span>
+              <span class="deal-price">$78</span><span class="per-night">/night</span>
+            </div>
+            <button class="view-stay-btn" type="button">View Stay</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card"
+        data-name="The Grand Paris Hotel"
+        data-location="Paris, France"
+        data-type="hotel"
+        data-discount="25"
+        data-price="157"
+        data-regular-price="210"
+        data-rating="4.7"
+        data-featured="4">
+        <div class="deal-image-wrap">
+          <img src="./Assets/grand_paris.jpeg" alt="The Grand Paris Hotel">
+          <span class="discount-badge">25% OFF</span>
+          <button class="favorite-btn" type="button" aria-label="Add The Grand Paris Hotel to favorites">♡</button>
+        </div>
+        <div class="deal-body">
+          <span class="deal-tag">POPULAR</span>
+          <h3>The Grand Paris Hotel</h3>
+          <p class="location">📍 Paris, France</p>
+          <div class="rating">★ <strong>4.7</strong> <span>(518 reviews)</span></div>
+          <div class="price-row">
+            <div>
+              <span class="old-price">$210</span>
+              <span class="deal-price">$157</span><span class="per-night">/night</span>
+            </div>
+            <button class="view-stay-btn" type="button">View Stay</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card"
+        data-name="Maldives Paradise"
+        data-location="Maldives"
+        data-type="resort"
+        data-discount="30"
+        data-price="245"
+        data-regular-price="350"
+        data-rating="4.9"
+        data-featured="5">
+        <div class="deal-image-wrap">
+          <img src="./Assets/maldavies_paradise_.jpeg" alt="Maldives Paradise">
+          <span class="discount-badge">30% OFF</span>
+          <button class="favorite-btn" type="button" aria-label="Add Maldives Paradise to favorites">♡</button>
+        </div>
+        <div class="deal-body">
+          <span class="deal-tag">BEST VALUE</span>
+          <h3>Maldives Paradise</h3>
+          <p class="location">📍 Maldives</p>
+          <div class="rating">★ <strong>4.9</strong> <span>(687 reviews)</span></div>
+          <div class="price-row">
+            <div>
+              <span class="old-price">$350</span>
+              <span class="deal-price">$245</span><span class="per-night">/night</span>
+            </div>
+            <button class="view-stay-btn" type="button">View Stay</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card"
+        data-name="Luxury Stay Dubai"
+        data-location="Dubai, UAE"
+        data-type="hotel"
+        data-discount="20"
+        data-price="128"
+        data-regular-price="160"
+        data-rating="4.6"
+        data-featured="3">
+        <div class="deal-image-wrap">
+          <img src="./Assets/luxury_stay_.jpeg" alt="Luxury Stay Dubai">
+          <span class="discount-badge">20% OFF</span>
+          <button class="favorite-btn" type="button" aria-label="Add Luxury Stay Dubai to favorites">♡</button>
+        </div>
+        <div class="deal-body">
+          <span class="deal-tag">HOT DEAL</span>
+          <h3>Luxury Stay Dubai</h3>
+          <p class="location">📍 Dubai, UAE</p>
+          <div class="rating">★ <strong>4.6</strong> <span>(402 reviews)</span></div>
+          <div class="price-row">
+            <div>
+              <span class="old-price">$160</span>
+              <span class="deal-price">$128</span><span class="per-night">/night</span>
+            </div>
+            <button class="view-stay-btn" type="button">View Stay</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card"
+        data-name="Blue Horizon Hotel"
+        data-location="New York, USA"
+        data-type="hotel"
+        data-discount="22"
+        data-price="148"
+        data-regular-price="190"
+        data-rating="4.7"
+        data-featured="4">
+        <div class="deal-image-wrap">
+          <img src="./Assets/blue_horizon.jpeg" alt="Blue Horizon Hotel">
+          <span class="discount-badge">22% OFF</span>
+          <button class="favorite-btn" type="button" aria-label="Add Blue Horizon Hotel to favorites">♡</button>
+        </div>
+        <div class="deal-body">
+          <span class="deal-tag">LIMITED DEAL</span>
+          <h3>Blue Horizon Hotel</h3>
+          <p class="location">📍 New York, USA</p>
+          <div class="rating">★ <strong>4.7</strong> <span>(391 reviews)</span></div>
+          <div class="price-row">
+            <div>
+              <span class="old-price">$190</span>
+              <span class="deal-price">$148</span><span class="per-night">/night</span>
+            </div>
+            <button class="view-stay-btn" type="button">View Stay</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-results" id="noResults" hidden>
+      <div class="empty-icon">⌕</div>
+      <h3>No matching deals</h3>
+      <p>Try a different search or filter.</p>
+    </div>
+
+    <div class="no-deals" id="noDealsAvailable" hidden>
+      <div class="empty-icon">🏷️</div>
+      <h3>No deals available right now</h3>
+      <p>Our current offers have ended. New deals will be available soon.</p>
+      <div class="cooldown-countdown">
+        <span>NEW DEALS IN</span>
+        <strong id="cooldownText">00:00:00</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown-section">
+    <div class="countdown-content">
+      <span class="section-label light">DON’T WAIT TOO LONG</span>
+      <h2 id="countdownHeading">Flash deals end soon!</h2>
+      <p id="countdownSubtext">These offers are only available for a limited time.</p>
+
+      <div class="timer" aria-label="Deal countdown">
+        <div class="timer-box"><strong id="days">00</strong><span>Days</span></div>
+        <div class="timer-box"><strong id="hours">00</strong><span>Hours</span></div>
+        <div class="timer-box"><strong id="minutes">00</strong><span>Mins</span></div>
+        <div class="timer-box"><strong id="seconds">00</strong><span>Secs</span></div>
+      </div>
+
+      <p class="deal-expired-message" id="dealExpiredMessage" hidden>
+        The current deals have ended. New deals will return after the cooldown.
+      </p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div>
+      <span class="section-label">STAY IN THE LOOP</span>
+      <h2>Get the best deals & travel inspiration</h2>
+      <p>Subscribe for new offers and travel updates.</p>
+    </div>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+      <p id="newsletterMessage" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">🏠 StayNest</a>
+      <p>Comfortable stays. Memorable journeys.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="find-booking.html">Find a Booking</a>
+      <a href="contact.html">Help Center</a>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="destinations.html">Destinations</a>
+      <a href="stays.html">Stays</a>
+      <a href="deals.html">Deals</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 StayNest. All rights reserved.</p>
+    <p>Made with ❤️ for travelers</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="deals.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Simulation</title>
+      <style>
+      #table {
+       background-color: #525252;
+       padding: 20px;
+       color: white;
+      }
+
+     #dataTable {
+       width: 60%;
+       margin: 0 auto;
+       border-collapse: collapse;
+       color: green;
+     }
+
+      th, td {
+       border: 1px solid #DDDDDD;
+       padding: 8px;
+     }
+
+     th {
+       background-color: #494949;
+       padding-top: 12px; 
+       padding-bottom: 12px; 
+       text-align: left;
+     }
+
+     h2{
+       text-align: center;
+     }
+    </style>
+
+</head>
+<body>
+  <form id="myForm">
+    <label for="city">Enter city:</label>
+    <input type="text" id="city" name="city"><br><br>
+    <label for="country">Enter country:</label>
+    <input type="text" id="country" name="country"><br><br>
+    <button type="button" id="submitBtn">Add Entry</button>
+  </form>
+
+  <div id="table">
+    <h2>Database Simulation</h2>
+    <table id="dataTable" border="1">
+      <tr>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function insertData(city, country) {
+      let table = document.getElementById('dataTable');
+      let newRow = table.insertRow();
+      let cell1 = newRow.insertCell(0);
+      let cell2 = newRow.insertCell(1);
+      cell1.textContent = city;
+      cell2.textContent = country;
+    }
+
+    function processFormData() {
+      let form = document.getElementById('myForm');
+      
+      // Debug: check if form exists
+      if (!form) {
+        alert('Form not found!');
+        return;
+      }
+
+      let city = form.elements.city.value.trim();
+      let country = form.elements.country.value.trim();
+
+      // Debug: check values
+      console.log('City:', city);
+      console.log('Country:', country);
+
+      if (!city || !country) {
+        alert('Please fill in both fields');
+        return;
+      }
+
+      insertData(city, country);
+
+      document.getElementById('city').value = '';
+      document.getElementById('country').value = '';
+    }
+
+    // Debug: check if button exists
+    let btn = document.getElementById('submitBtn');
+    if (!btn) {
+      alert('Button not found!');
+    } else {
+      btn.addEventListener('click', processFormData);
+      console.log('Button attached successfully');
+    }
+  </script>
+</body>
+</html>

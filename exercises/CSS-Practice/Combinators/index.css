@@ -1,0 +1,15 @@
+main p{
+    background-color: green;
+}
+
+main > p{
+    background-color: blue;
+}
+
+main + p{
+    background-color: blueviolet;
+}
+
+main ~ p{
+    background-color: brown;
+}

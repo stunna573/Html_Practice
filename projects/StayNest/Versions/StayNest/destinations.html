@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Destinations | StayNest</title>
+<link href="./destinations.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+<!-- =================================================
+         NAVBAR
+    ================================================== -->
+<header class="site-header">
+<nav class="navbar">
+<a class="logo" href="index.html">
+                🏠 StayNest
+            </a>
+<ul class="nav-links">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li class="active">
+<a href="destinations.html">
+                        Destinations
+                    </a>
+</li>
+<li>
+<a href="stays.html">
+                        Stays
+                    </a>
+</li>
+<li>
+<a href="deals.html">
+                        Deals
+                    </a>
+</li>
+<li>
+<a href="find-booking.html">Find a Booking</a>
+</li>
+<li>
+<a href="contact.html">
+                        Contact
+                    </a>
+</li>
+</ul>
+<div class="account-links">
+<a href="favorites.html">
+                    ♡ Favorites
+                </a>
+<a href="login.html">
+                    ◯ Sign in
+                </a>
+<button aria-label="Open menu" class="menu-button">
+                    ☰
+                </button>
+</div>
+</nav>
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+<a href="index.html">Home</a>
+<a href="destinations.html">
+                Destinations
+            </a>
+<a href="stays.html">
+                Stays
+            </a>
+<a href="deals.html">
+                Deals
+            </a>
+<a href="find-booking.html">Find a Booking</a>
+<a href="contact.html">
+                Contact
+            </a>
+<a href="favorites.html">
+                ♡ Favorites
+            </a>
+<a href="login.html">
+                ◯ Sign in
+            </a>
+</div>
+</header>
+<!-- =================================================
+         PAGE HERO
+    ================================================== -->
+<section class="destination-hero">
+<div class="hero-content">
+<p class="eyebrow">
+                EXPLORE THE WORLD
+            </p>
+<h1>
+                Discover your next destination
+            </h1>
+<p class="hero-description">
+                From tropical beaches to vibrant cities,
+                find a destination that feels like home.
+            </p>
+</div>
+</section>
+<!-- =================================================
+         SEARCH & FILTERS
+    ================================================== -->
+<section class="destination-tools">
+<div class="search-wrapper">
+<span class="search-icon">
+                🔍
+            </span>
+<input autocomplete="off" id="destinationSearch" placeholder="Search destinations..." type="text"/>
+</div>
+<div class="filter-wrapper">
+<label for="regionFilter">
+                Region
+            </label>
+<select id="regionFilter">
+<option value="all">
+                    All regions
+                </option>
+<option value="asia">
+                    Asia
+                </option>
+<option value="europe">
+                    Europe
+                </option>
+<option value="middle-east">
+                    Middle East
+                </option>
+<option value="north-america">
+                    North America
+                </option>
+<option value="africa">
+                    Africa
+                </option>
+</select>
+</div>
+<div class="sort-wrapper">
+<label for="sortDestinations">
+                Sort
+            </label>
+<select id="sortDestinations">
+<option value="popular">
+                    Most popular
+                </option>
+<option value="properties-high">
+                    Most properties
+                </option>
+<option value="properties-low">
+                    Fewest properties
+                </option>
+<option value="name">
+                    Name A-Z
+                </option>
+</select>
+</div>
+</section>
+<!-- =================================================
+         DESTINATIONS
+    ================================================== -->
+<section class="destinations-section">
+<div class="section-heading">
+<div>
+<p class="section-label">
+                    POPULAR PLACES
+                </p>
+<h2>
+                    Explore destinations
+                </h2>
+</div>
+<p class="result-count" id="resultCount">
+                5 destinations
+            </p>
+</div>
+<div class="destination-grid" id="destinationGrid">
+<!-- =========================================
+                 BALI
+            ========================================== -->
+<article class="destination-card" data-name="Bali, Indonesia" data-popularity="5" data-properties="1345" data-region="asia">
+<div class="destination-image">
+<img alt="Bali, Indonesia" src="./Assets/bali.jpeg"/>
+<button aria-label="Add Bali to favorites" class="favorite-button">
+                        ♡
+                    </button>
+<span class="destination-badge">
+                        Popular
+                    </span>
+</div>
+<div class="destination-content">
+<div class="destination-title">
+<h3>
+                            Bali, Indonesia
+                        </h3>
+<span class="rating">
+                            ★ 4.9
+                        </span>
+</div>
+<p class="properties">
+                        📍 1,345 properties
+                    </p>
+<p class="description">
+                        Tropical beaches, beautiful resorts
+                        and unforgettable island experiences.
+                    </p>
+<button class="explore-button" data-destination="Bali, Indonesia">
+                        Explore stays
+                        <span>→</span>
+</button>
+</div>
+</article>
+<!-- =========================================
+                 PARIS
+            ========================================== -->
+<article class="destination-card" data-name="Paris, France" data-popularity="5" data-properties="2450" data-region="europe">
+<div class="destination-image">
+<img alt="Paris, France" src="./Assets/paris.jpeg"/>
+<button aria-label="Add Paris to favorites" class="favorite-button">
+                        ♡
+                    </button>
+<span class="destination-badge">
+                        Trending
+                    </span>
+</div>
+<div class="destination-content">
+<div class="destination-title">
+<h3>
+                            Paris, France
+                        </h3>
+<span class="rating">
+                            ★ 4.8
+                        </span>
+</div>
+<p class="properties">
+                        📍 2,450 properties
+                    </p>
+<p class="description">
+                        Discover iconic landmarks, charming
+                        streets and unforgettable cuisine.
+                    </p>
+<button class="explore-button" data-destination="Paris, France">
+                        Explore stays
+                        <span>→</span>
+</button>
+</div>
+</article>
+<!-- =========================================
+                 DUBAI
+            ========================================== -->
+<article class="destination-card" data-name="Dubai, UAE" data-popularity="4" data-properties="1676" data-region="middle-east">
+<div class="destination-image">
+<img alt="Dubai, UAE" src="./Assets/dubai.jpeg"/>
+<button aria-label="Add Dubai to favorites" class="favorite-button">
+                        ♡
+                    </button>
+</div>
+<div class="destination-content">
+<div class="destination-title">
+<h3>
+                            Dubai, UAE
+                        </h3>
+<span class="rating">
+                            ★ 4.8
+                        </span>
+</div>
+<p class="properties">
+                        📍 1,676 properties
+                    </p>
+<p class="description">
+                        Luxury hotels, modern architecture
+                        and world-class experiences.
+                    </p>
+<button class="explore-button" data-destination="Dubai, UAE">
+                        Explore stays
+                        <span>→</span>
+</button>
+</div>
+</article>
+<!-- =========================================
+                 MALDIVES
+            ========================================== -->
+<article class="destination-card" data-name="Maldives" data-popularity="4" data-properties="980" data-region="asia">
+<div class="destination-image">
+<img alt="Maldives" src="./Assets/maldavies.jpeg"/>
+<button aria-label="Add Maldives to favorites" class="favorite-button">
+                        ♡
+                    </button>
+<span class="destination-badge">
+                        Escape
+                    </span>
+</div>
+<div class="destination-content">
+<div class="destination-title">
+<h3>
+                            Maldives
+                        </h3>
+<span class="rating">
+                            ★ 4.9
+                        </span>
+</div>
+<p class="properties">
+                        📍 980 properties
+                    </p>
+<p class="description">
+                        Crystal-clear waters, private villas
+                        and peaceful island escapes.
+                    </p>
+<button class="explore-button" data-destination="Maldives">
+                        Explore stays
+                        <span>→</span>
+</button>
+</div>
+</article>
+<!-- =========================================
+                 NEW YORK
+            ========================================== -->
+<article class="destination-card" data-name="New York, USA" data-popularity="5" data-properties="2120" data-region="north-america">
+<div class="destination-image">
+<img alt="New York, USA" src="./Assets/newyork.jpeg"/>
+<button aria-label="Add New York to favorites" class="favorite-button">
+                        ♡
+                    </button>
+<span class="destination-badge">
+                        Popular
+                    </span>
+</div>
+<div class="destination-content">
+<div class="destination-title">
+<h3>
+                            New York, USA
+                        </h3>
+<span class="rating">
+                            ★ 4.7
+                        </span>
+</div>
+<p class="properties">
+                        📍 2,120 properties
+                    </p>
+<p class="description">
+                        A city full of energy, entertainment,
+                        shopping and iconic attractions.
+                    </p>
+<button class="explore-button" data-destination="New York, USA">
+                        Explore stays
+                        <span>→</span>
+</button>
+</div>
+</article>
+</div>
+<!-- NO RESULTS -->
+
+<!-- KYOTO -->
+<article class="destination-card" data-name="Kyoto, Japan" data-popularity="5" data-properties="1840" data-region="asia">
+<div class="destination-image">
+<img alt="Kyoto, Japan" src="https://images.unsplash.com/photo-1551106368-d9157e48a3ca?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/>
+<button aria-label="Add Kyoto to favorites" class="favorite-button">♡</button>
+<span class="destination-badge">New</span>
+</div>
+<div class="destination-content">
+<div class="destination-title"><h3>Kyoto, Japan</h3><span class="rating">★ 4.9</span></div>
+<p class="properties">📍 1,840 properties</p>
+<p class="description">Ancient temples, peaceful gardens, traditional streets and unforgettable Japanese culture.</p>
+<button class="explore-button" data-destination="Kyoto, Japan">Explore stays <span>→</span></button>
+</div>
+</article>
+<!-- CAPE TOWN -->
+<article class="destination-card" data-name="Cape Town, South Africa" data-popularity="5" data-properties="1320" data-region="africa">
+<div class="destination-image">
+<img alt="Cape Town, South Africa" src="https://images.unsplash.com/photo-1730234351641-96b97bf423d1?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200"/>
+<button aria-label="Add Cape Town to favorites" class="favorite-button">♡</button>
+<span class="destination-badge">New</span>
+</div>
+<div class="destination-content">
+<div class="destination-title"><h3>Cape Town, South Africa</h3><span class="rating">★ 4.8</span></div>
+<p class="properties">📍 1,320 properties</p>
+<p class="description">Ocean views, Table Mountain, beautiful beaches and a vibrant waterfront city.</p>
+<button class="explore-button" data-destination="Cape Town, South Africa">Explore stays <span>→</span></button>
+</div>
+</article>
+
+<div class="no-results" id="noResults">
+<div class="no-results-icon">
+                🔎
+            </div>
+<h3>
+                No destinations found
+            </h3>
+<p>
+                Try searching for another destination
+                or changing your filters.
+            </p>
+<button id="resetSearch">
+                Reset filters
+            </button>
+</div>
+<div class="pagination" id="destinationPagination"></div>
+</section>
+<!-- =================================================
+         TRAVEL INSPIRATION
+    ================================================== -->
+<section class="inspiration">
+<div class="inspiration-content">
+<p class="section-label">
+                START EXPLORING
+            </p>
+<h2>
+                Where will you go next?
+            </h2>
+<p>
+                Whether you're looking for a relaxing
+                getaway or an exciting city adventure,
+                StayNest makes finding your perfect stay
+                simple.
+            </p>
+<a class="primary-button" href="stays.html">
+                Browse all stays →
+            </a>
+</div>
+</section>
+<!-- =================================================
+         NEWSLETTER
+    ================================================== -->
+<section class="newsletter">
+<div class="newsletter-icon">
+            ✉
+        </div>
+<div class="newsletter-text">
+<h2>
+                Get the best deals &amp; travel inspiration
+            </h2>
+<p>
+                Join our newsletter and save on your next adventure.
+            </p>
+</div>
+<form class="newsletter-form" id="newsletterForm">
+<input id="newsletterEmail" placeholder="Enter your email" required="" type="email"/>
+<button type="submit">
+                Subscribe
+            </button>
+</form>
+</section>
+<!-- =================================================
+         FOOTER
+    ================================================== -->
+<footer>
+<div class="footer-main">
+<div class="footer-brand">
+<a class="footer-logo" href="index.html">
+                    🏠 StayNest
+                </a>
+<p>
+                    Find your perfect stay anywhere.<br/>
+                    Hotels, homes and more for<br/>
+                    every kind of traveler.
+                </p>
+<div class="socials">
+                    ●   ◎   ●   ▶
+                </div>
+</div>
+<div class="footer-column">
+<h4>
+                    Company
+                </h4>
+<a href="about.html">
+                    About Us
+                </a>
+<a href="#">
+                    Careers
+                </a>
+<a href="#">
+                    Press
+                </a>
+<a href="#">
+                    Blog
+                </a>
+</div>
+<div class="footer-column">
+<h4>
+                    Support
+                </h4>
+<a href="contact.html">
+                    Help Center
+                </a>
+<a href="#">
+                    Terms &amp; Conditions
+                </a>
+<a href="#">
+                    Privacy Policy
+                </a>
+<a href="#">
+                    FAQs
+                </a>
+</div>
+<div class="footer-column">
+<h4>
+                    Explore
+                </h4>
+<a href="destinations.html">
+                    Destinations
+                </a>
+<a href="stays.html">
+                    Stays
+                </a>
+<a href="deals.html">
+                    Deals
+                </a>
+<a href="#">
+                    Travel Guide
+                </a>
+</div>
+<div class="app-section">
+<h4>
+                    Download our app
+                </h4>
+<div class="app-buttons">
+<button>
+                         App Store
+                    </button>
+<button>
+                        ▶ Google Play
+                    </button>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+                © 2026 StayNest. All rights reserved.
+            </p>
+<p>
+                Made with ❤️ for travelers
+            </p>
+</div>
+</footer>
+</main>
+<script src="auth-nav.js"></script>
+<script src="./destinations.js"></script>
+</body>
+</html>

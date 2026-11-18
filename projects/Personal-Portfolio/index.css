@@ -1,0 +1,876 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    color: aquamarine;
+    overflow-x: hidden;
+} 
+nav div{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+nav{
+    color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 26.5em;
+    margin-left: 1em;
+}
+nav .enquires li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+nav ul img{
+    width: 2em;
+    height: 2em;
+    
+}
+.enquires{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    gap: 0em;
+}
+#menu_icon{
+    display: none;
+}
+.top_intro_section{
+    display: flex;
+    position: relative;
+    /* gap: 1em; */
+}
+#top_intro_section_h1{
+   margin-top: 3.5em;
+   margin-left:1em ;
+   font-size: 4em;
+}
+#top_intro_section_h2{
+margin-left: 2em;
+font-size:2em;
+}
+#top_intro_section_paragraph{
+    margin-left: 4em ;
+}
+#main{
+   /* margin-left: 40em; */
+   width: 55em;
+   height: 45em;
+}
+.bottom_intro_section{
+    position: absolute;
+    bottom: 12em;
+    left: 4.5em;
+}
+#Contact_btn{
+    background-color:powderblue;
+    width: 10em;
+    padding: 1em;
+    border-radius: 19px;
+    border-style:solid;
+    border-color:cadetblue;
+}
+#cv_btn{
+    padding: 1em;
+    width: 10em;
+    border-radius: 19px;
+    background-color:powderblue;
+    /* margin-left: 2em; */
+    border-style:solid;
+    border-color:cadetblue;
+}
+.bottom_intro_section #contact_btn:hover{
+    background-color:white;
+    /* color: powderblue; */
+    size: 2em;
+}
+.about_me_section{
+    margin-top: 5em;
+    margin-left: 3em;
+   margin-right: 3em;
+}
+/* animation */
+.autoshow{
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 90% cover 100vh;
+}
+@keyframes text-appear{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+        filter: blur(0);
+    }
+}
+#about_me_section_h1{
+ margin-left: 11em;
+ font-size: 3em;
+}
+#about_me_paragraph1{
+    /* justify-content: center; */
+    text-align: justify;
+
+}
+
+.skills img{
+   width: 9em;
+   height: 5em;
+} 
+.projects_section{
+    position: relative;
+    margin-top: 20em;
+}
+.projects_section .projects{
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    margin-left: 3em;
+    margin-right: 3em;
+    /* background-color: chartreuse; */
+   /* align-items: center; */
+}
+#projects_section_h1{
+    margin-left: 12.5em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+.skills{
+    transition: transform 0.3s ease;
+}
+.skills:hover{
+    transform: translate(-10px);
+}
+.projects_section img{
+    width: 20em;
+    height: 25em; 
+    margin-left: 0.5em;
+    
+    /* position: relative; */
+    /* margin-top: 2em; */
+    /* justify-content: space-evenly; */
+}
+.projects_section{
+   transition: transform 0.3s ease;
+}
+.projects_section img:hover{
+    /* transform: translate(10px); */
+    transform: scale(1.5);
+    transform: translate(-1px, -10px);
+}
+/* .project_card{
+    animation: projectReveal linear both;
+    animation-timeline: view() ;
+    animation-range: entry 50% cover 50%;
+}
+@keyframes projectReveal{
+    from {
+        opacity: 0;
+        transform: perspective(1600px);
+        rotate: 35deg;
+      
+
+      
+    }
+
+    60% {
+        transform: perspective(1600px);
+        rotateY:(-5deg) scale(1.05); 
+        rotate: (-5deg)  scale(1.05); 
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(1600px);
+        rotateY:(0) rotateX(0) translateY(0) scale(1) ; 
+        filter: blur(0);
+    } 
+} */
+
+.projects_section div h2{
+   font-size: 1.5em;
+   
+}
+#netflix_clone{
+    position: absolute;
+    top: 14.2em;
+    left: 3.5em;
+    color:cadetblue;
+}
+#netflix_clone_description{
+    position: absolute;
+    top: 24em;
+    left: 5.4em;
+    color:cadetblue;
+}
+#weather_app{
+    position: absolute;
+    top: 14.2em;
+    left: 17.5em;
+    color:cadetblue;
+}
+#weather_app_description{
+    position: absolute;
+    top: 24em;
+    left: 26.5em;
+    color:cadetblue;
+}
+#todo_list{
+    position: absolute;
+    top: 14.2em;
+    left: 31.3em;
+    color:cadetblue;
+}
+#todo_list_description{
+    position: absolute;
+    top: 24em;
+    left: 47.2em;
+    /* color: burlywood; */
+    color:cadetblue;
+}
+#portfolio_website{
+    position: absolute;
+    top: 14.2em;
+    left: 45.1em;
+    color:cadetblue;
+}
+#portfolio_website_description{
+    position: absolute;
+    top: 24em;
+    left: 67.8em;
+    /* color: burlywood; */
+    color:cadetblue;
+}
+.project_btn1{
+    position: absolute;
+    top: 35em;
+    left: 21.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1em;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn2{
+    position: absolute;
+    top: 35em;
+    left: 46.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1em;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn3{
+    position: absolute;
+    top: 35em;
+    left: 71.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1em;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn4{
+    position: absolute;
+    top: 35em;
+    left: 96.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1em;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+
+
+
+
+#view_more_projects{
+    background-color:powderblue;
+    width: 15em;
+    padding: 1.5em;
+    border-radius: 19px;
+    border-style:solid;
+    border-color:cadetblue;
+    margin-left: 73rem;
+    margin-top: 2em;
+}
+.projects_section button:hover{
+    background-color:white;
+}
+.contact_section{
+    margin-left: 3em;
+}
+.contact_section ul li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+#contact_section_h1{
+    margin-left: 12.5em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+.contact_form input{
+    width: 15em;
+    padding: .7em;
+    border-radius: .8em;
+    background-color: #dae6f2;
+}
+input[type="email"]{
+    margin-left: 1em;
+}
+.contact_form textarea{
+    width: 33em;
+    height: 8em;
+    padding: .7em;
+    border-radius: .8em;
+    margin-top: 10px;
+    background-color: #dae6f2;
+}
+button[type="submit"]{
+    background-color:powderblue;
+    width: 10em;
+    padding: 1em;
+    border-radius: 19px;
+    border-style:solid;
+    border-color:cadetblue;
+    margin-top: 1em;
+}
+
+footer{
+    display: flex;
+    margin-top: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    justify-content: center;
+    gap: 10em;
+    border-top: 2px solid aquamarine;
+}
+footer ul img{
+    width: 2em;
+    height: 2em;
+    
+}
+
+@media (max-width: 768px) {
+    html{
+    scroll-behavior: smooth;
+}
+/* body{
+    overflow-x: hidden;
+}  */
+nav{
+    display: flex;
+    align-items: center;
+    gap: 52%;
+    margin-left: 1.5em;
+}
+.socials{
+    display: none;
+}
+#top_intro_section_h1{
+   margin-top: 2.5em;
+   margin-left:1em ;
+   font-size: 4em;
+}
+#top_intro_section_h2{
+margin-left: 2em;
+font-size:2em;
+}
+#top_intro_section_paragraph{
+    margin-left: 4em ;
+}
+
+
+#main{
+   width: 34em;
+   height: 45em;
+  
+}
+.bottom_intro_section{
+    bottom: 15em;
+    left: 4.3em;
+}
+.about_me_section{
+    margin-top: 5em;
+    margin-left: 4em;
+   margin-right: 1em;
+}
+
+#about_me_section_h1{
+ margin-left: 5em;
+}
+.autoshow{
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50vh;
+}
+@keyframes text-appear{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+        filter: blur(0);
+    }
+}
+
+/* .skills{
+    width: 5em;
+} */
+.projects_section .projects{
+    margin-left: 4em;
+    margin-right: 1em;
+}
+#projects_section_h1{
+    margin-left: 6.3em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+
+
+.projects_section img{
+    width: 10em;
+    height: 25em; 
+    margin-left: 0em;
+    
+    /* position: relative; */
+    /* margin-top: 2em; */
+    /* justify-content: space-evenly; */
+
+}
+
+#netflix_clone{
+    position: absolute;
+    top: 17.2em;
+    left: 3.8em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#netflix_clone_description{
+    position: absolute;
+    top: 39em;
+    left: 8em;
+    color:cadetblue;
+    font-size: 10px;
+    text-align: justify;
+    width: 10em;
+}
+#weather_app{
+    position: absolute;
+    top: 17.2em;
+    left: 12em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#weather_app_description{
+    position: absolute;
+    top:39em;
+    left: 24.5em;
+    color:cadetblue;
+    font-size: 10px;
+    width: 10em;
+}
+#todo_list{
+    position: absolute;
+    top:17.2em;
+    left: 20.2em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#todo_list_description{
+    position: absolute;
+    top:39em;
+    left: 41em;
+    /* color: burlywood; */
+    color:cadetblue;
+    font-size:10px;
+    width: 10em;
+}
+#portfolio_website{
+    position: absolute;
+    top: 17.2em;
+    left: 28.4em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#portfolio_website_description{
+    position: absolute;
+    top: 39em;
+    left: 57.5em;
+    /* color: burlywood; */
+    color:cadetblue;
+    font-size: 10px;
+    width: 10em;
+}
+.project_btn1{
+    position: absolute;
+    top: 35.5em;
+    left: 11.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn2{
+    position: absolute;
+    top: 35.5em;
+    left: 23.7em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn3{
+    position: absolute;
+    top: 35.5em;
+    left: 36em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn4{
+    position: absolute;
+    top: 35.5em;
+    left: 48.3em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.contact_section{
+    margin-left: 4em;
+}
+
+#contact_section_h1{
+    margin-left: 5.5em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+#view_more_projects{
+   margin-left: 43.5em;
+   width: 10em;
+   padding: .7em;
+   
+
+}
+footer{
+    display: flex;
+    margin-top: 5em;
+    margin-left: 4em;
+    margin-right: 1em;
+    justify-content: center;
+    gap: 10em;
+    border-top: 2px solid aquamarine;
+}
+
+}
+
+@media (max-width: 425px) {
+nav{
+    gap: 29em;
+    margin-left: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.enquires{
+    display: none;
+}
+#menu_icon{
+    display: flex;
+}
+
+
+#main{
+    /* width: 30em; */
+    display:none;
+}
+.about_me_section{
+    margin-top: 5em;
+    margin-left: 4em;
+   /* margin-right: 10em; */
+   /* background-color: blue; */
+   width: 37em;
+}
+.top_intro_section{
+    display: block;
+    position: relative;
+    /* gap: 1em; */
+}
+
+#top_intro_section_h1{
+   margin-top: 3.5em;
+   margin-left:1em ;
+   font-size: 4em;
+   /* width: 10em; */
+}
+#top_intro_section_h2{
+margin-left: 2em;
+font-size:2em;
+
+}
+#top_intro_section_paragraph{
+    margin-left: 4em ;
+    width: 27em;
+}
+
+.bottom_intro_section{
+    position: absolute;
+    bottom: 7em;
+    left: 4.5em;
+}
+
+
+.about_me_section{
+    margin-top:15em;
+    margin-left: 3em;
+   margin-right: 3em;
+}
+
+#about_me_section_h1{
+ margin-left: 2.5em;
+ 
+}
+#about_me_paragraph1{
+    /* justify-content: center; */
+    text-align: justify;
+    width: 29em;
+
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2em;
+    /* margin-left: 3em;
+    margin-right: 3em; */
+}
+
+.projects{
+   display: grid;
+   grid-template-columns: repeat(1 ,1fr);
+   gap: 2em;
+  
+}
+#projects_section_h1{
+    margin-left: 4em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+
+
+.projects_section img{
+    width: 27em;
+    height: 27em; 
+    margin-left: 0em;
+    
+    
+    /* position: relative; */
+    /* margin-top: 2em; */
+    /* justify-content: space-evenly; */
+
+}
+#netflix_clone{
+    position: absolute;
+    top: 18.5em;
+    left: 4em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#netflix_clone_description{
+    position: absolute;
+    top: 28em;
+    left: 5.5em;
+    color:cadetblue;
+    font-size: 15px;
+    text-align: justify;
+    width: 20em;
+}
+#weather_app{
+    position: absolute;
+    top: 17.2em;
+    left: 19em;
+    color:cadetblue;
+    font-size: 20px;
+    width: 20em;
+}
+#weather_app_description{
+    position: absolute;
+    top:25em;
+    left: 25.5em;
+    color:cadetblue;
+    font-size: 15px;
+    width: 20em;
+}
+#todo_list{
+    position: absolute;
+    top:37.5em;
+    left: 4em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#todo_list_description{
+    position: absolute;
+    top: 52em;
+    left: 5.5em;
+    /* color: burlywood; */
+    color:cadetblue;
+    font-size: 15px;
+    width: 20em;
+}
+#portfolio_website{
+    position: absolute;
+    top: 37.5em;
+    left: 19em;
+    color:cadetblue;
+    font-size: 20px;
+}
+#portfolio_website_description{
+    position: absolute;
+    top: 52em;
+    left: 25.5em;
+    /* color: burlywood; */
+    color:cadetblue;
+    font-size: 15px;
+    width: 20em;
+}
+.project_btn1{
+    position: absolute;
+    top: 35.5em;
+    left: 19.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn2{
+    position: absolute;
+    top: 35.5em;
+    left: 42.7em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn3{
+    position: absolute;
+    top: 64.5em;
+    left: 19.4em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+.project_btn4{
+    position: absolute;
+    top: 64.5em;
+    left: 42.7em;
+    /* background-color:powderblue; */
+    width: 5em;
+    padding: .1px;
+    border-radius: 6px;
+    border-color: cadetblue ;
+    border-style:solid ;
+    background-color:powderblue;
+}
+#view_more_projects{
+   margin-left: 39.5em;
+   width: 10em;
+   padding: .7em;
+   
+
+}
+#contact_section_h1{
+    margin-left: 4.5em;
+    font-size: 3em;
+    margin-top: 5em;
+}
+
+#contact_section_paragraph{
+    width: 37.5em;
+}
+input[type="email"]{
+    margin-left: 0em;
+}
+footer{
+    display: flex;
+    margin-top: 5em;
+    margin-left: 4em;
+    margin-right: 0em;
+    justify-content: center;
+    gap: 10em;
+    border-top: 2px solid aquamarine;
+    width: 37.5em;
+}
+
+
+
+}
+@media (max-width: 320px) {
+.bottom_intro_section{
+    bottom: 0em;
+    left: 4.3em;
+}
+#Contact_btn{
+    background-color:powderblue;
+    width: 7em;
+    padding: .5em;
+    border-radius: 19px;
+    border-style:solid;
+    border-color:cadetblue;
+}
+#cv_btn{
+    padding: .5em;
+    width: 7em;
+    border-radius: 19px;
+    background-color:powderblue;
+    /* margin-left: 2em; */
+    border-style:solid;
+    border-color:cadetblue;
+}
+
+
+}

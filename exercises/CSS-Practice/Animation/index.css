@@ -1,0 +1,44 @@
+.fm{
+    margin: 3em auto;
+    width: 30%;
+    height: 30vh;
+    background-image: radial-gradient(#c9eef5 , #1d6b1d , #ed4949ec ,#f3e765);
+    /* border-radius: 50%; */
+    /* transition: width 10s, height 10s; background-image: 15s; */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: anima;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+/* .fm:hover{
+    width: 60%;
+    height: 60vh;
+    background-image: conic-gradient(#c9eef5 , #1d6b1d , #ed4949ec ,#f3e765);
+
+       transform: translate(90%, 90%); */
+        /* transform: rotate(90deg);
+        transform: scale(2);
+        transform: skew(10deg); */
+
+        /* transform: matrix(1,0,3,0,1,0,1);
+
+} */
+ @keyframes anima {
+    0%{
+        transform: scale(2);
+    }
+    50%{
+      transition: ease-in-out width 3s, height 3s;
+    }
+    60%{
+        transform: translate(50%,90%);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+ }

@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    width: 100%;
+    color: #15193A;
+}
+main{
+    width: 100%;
+}
+.hero{
+    background-image: 
+        linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.25) 35%,
+        rgba(0, 0, 0, 0.20) 70%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    url(./Assets/hero.jpeg)
+;
+    min-height: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    position: relative;
+
+    /* background-color: aqua; */
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 30px 4%;
+    color: white;
+    z-index: 15;
+}
+.logo{
+    text-decoration: none;
+    /* color:#10204a; */
+    color: white;
+    font-size:24px;
+    font-weight: 800;
+    justify-self: start;
+}
+.enquires{
+    display: flex;
+    justify-self: center;
+    list-style: none;
+    gap: 30px;
+}
+.accounts{
+    display: flex;
+    justify-self: end;
+    list-style: none;
+    gap: 20px;
+}
+.intro{
+    padding: 50px 7%;
+    color: whitesmoke;
+    z-index: 1;
+}
+.intro h1{
+ font-size: 52px;
+ /* font-weight: 500; */
+ line-height: 1.05;
+/* text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.65); */
+ 
+ /* z-index: 1; */
+
+}
+.intro p{
+    font-size: 18px;
+    padding: 5px 0% 0px;
+    /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7); */
+
+}
+span{
+    color: #F3AE31;
+}
+.questions{
+    padding: 50px 7%;
+    position:absolute;
+    bottom: 42%;
+   
+   
+    color: #9B9EB4;
+   
+
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+.internal{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.229);
+    border-radius: 10px;
+    padding: 20px 1%;
+    position: relative;
+    background-color: #FEFEFE ;
+}
+.internal h5{
+  color: #9B9EB4;
+  margin-bottom: 5px;
+}
+.internal input{
+    border: none;
+    padding: 2px 0%;
+
+}
+.destination{
+    border: none;
+}
+#location{
+    position: absolute;
+    right: 95.5%;
+    bottom: 35%;
+    height: 30px;
+}
+#calender{
+    position: absolute;
+    right: 71%;
+    bottom: 35%;
+    height: 30px;
+ 
+}
+#calender2{
+    position: absolute;
+    right: 48.5%;
+    bottom: 35%;
+    height: 30px;
+
+}
+#Guest1{
+    position: absolute;
+    right: 26%;
+    bottom: 35%;
+    height: 30px;
+
+}
+.Check-in{
+    border-left: 1px solid #ddd;
+}
+.Check-out{
+    border-left: 1px solid #ddd;
+}
+.Guests{
+    border-left: 1px solid #ddd;
+}
+.internal div{
+    /* border-right: 1px solid #ddd; */
+    /* border-left: 1px solid; */
+    padding: 0px 4.5%;
+   align-items: center;
+}
+#Guest{
+   padding: 3px 10%;
+   border: none;
+}
+#Search{
+    padding: 2px 4%;
+    background-color: #F3AE31;
+    border-radius: 8px;
+    border: none;
+}
+
+.About{
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+
+}
+.Price_Guarantee{
+    position: relative;
+    /* background-color: aqua; */
+    padding: 0px 0px 0px 6%;
+}
+.secure{
+    position: relative;
+    padding: 0px 0px 0px 6%;
+}
+.support{
+    position: relative;
+    padding: 0px 0px 0px 6%;
+    /* background-color: rgb(30, 172, 14); */
+
+}
+.Free_Cancellation{
+    position: relative;
+    padding: 0px 0px 0px 6%;
+}
+
+.Price_Guarantee p{
+   margin-top: 4.5px;
+}
+.secure p{
+  margin-top: 4.5px;
+}
+.support p{
+   margin-top: 4.5px; 
+}
+.Free_Cancellation p{
+    margin-top: 4.5px;
+}
+.Price_Guarantee img{
+  width: 4em;
+  height: 4em;
+  background-color: #F0F3FC;
+  padding: 13px;
+  border-radius: 100%;
+  position: absolute;
+  right: 76.1%;
+}
+.secure img{
+  width: 4em;
+  height: 4em;
+  background-color: #F0F3FC;
+  padding: 13px;
+  border-radius: 100%;
+  position: absolute;
+  right: 76.1%;
+
+}
+.support img{
+  width: 4em;
+  height: 4em;
+  background-color: #F0F3FC;
+  padding: 13px;
+  border-radius: 100%;
+  position: absolute;
+  right: 76.1%;
+}
+.Free_Cancellation img{
+  width: 4em;
+  height: 4em;
+  background-color: #F0F3FC;
+  padding: 13px;
+  border-radius: 100%;
+  position: absolute;
+  right: 76.1%;
+}
+.destination_section{
+    padding: 35px 7%;
+}
+.Destionations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Destionations div{
+    color: #2A3298;
+}
+.Destionations_image{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* grid-template-columns: repeat(5,70%); */
+}
+.Destionations_image img{
+    width: 19.3%;
+    border-radius: 20px 20px 25px 25px;
+}
+.Destionation_items{
+    position: relative;
+}
+#bali{
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  color: white;
+}
+#prop1{
+  position: absolute;
+  top: 87%;
+  left: 2%;
+  color: white;
+}
+#location_dest{
+  position: absolute;
+  top: 87%;
+  left: 22%;
+  color: white;
+
+}
+#France{
+  position: absolute;
+  top: 75%;
+  left: 22%;
+  color: white;
+
+}
+#prop2{
+  position: absolute;
+  top: 87%;
+  left: 22%;
+  color: white;
+
+}
+#dubai{
+  position: absolute;
+  top: 75%;
+  left: 42%;
+  color: white;
+
+}
+#prop3{
+  position: absolute;
+  top: 87%;
+  left: 42%;
+  color: white;
+
+}
+#maldavies{
+  position: absolute;
+  top: 75%;
+  left: 62%;
+  color: white;
+
+}
+#prop4{
+  position: absolute;
+  top: 87%;
+  left: 62%;
+  color: white;
+
+}
+#usa{
+  position: absolute;
+  top: 75%;
+  left: 82%;
+  color: white;
+
+}
+#prop5{
+  position: absolute;
+  top: 87%;
+  left: 82%;
+  color: white;
+
+}

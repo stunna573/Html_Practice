@@ -1,0 +1,94 @@
+main{
+    margin: 1em 32em;
+    background-color: #7e7c7c70;
+}
+
+header{
+    background-color: #F2A361;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    justify-content: center;
+    padding: 10px;
+}
+
+#menu{
+    width: 40px;
+    color: rgba(0,0,0,0.377);
+}
+
+#logo{
+    width: 16em;
+    height: 5em;
+}
+
+#cart{
+    width: 30px;
+    height: 30px;
+    padding-left: 1em;
+}
+
+.input{
+    position: relative;
+}
+
+#svg2{
+    position: absolute;
+    top: 22%;
+    left: 5%;
+}
+
+.input input{
+    border: 2px solid black;
+    padding: 15px 10px 12px 40px;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+    
+}
+
+/* Table */
+section{
+    margin: .5em 0 0 .5em;
+    padding: 10px;
+    height: 100vh;
+}
+
+.nav{
+    padding: 10px;
+    background-color: #FFAD33;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3.5em;
+    border-radius: 7px;
+    margin: 2em 0;
+}
+
+.table-input{
+    padding: 0 10px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-bottom: 2em;
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+#red{
+    color: rgb(228,66,66);
+}
+
+#blue{
+    color: rgb(56, 56,161);
+}
+

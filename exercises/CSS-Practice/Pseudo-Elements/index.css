@@ -1,0 +1,28 @@
+main p:first-child{
+    background-color: aqua;
+}
+
+main p:first-letter{
+    background-color: blueviolet;
+}
+
+/* unvisited */
+a:link{
+    color: antiquewhite;
+}
+
+/* visited link */
+a:visited{
+    color: brown;
+}
+
+/* mouse over link */
+a:hover{
+    color: pink;
+    font-size: 30px;
+}
+
+/* selected link */
+a:active{
+    color: azure;
+}

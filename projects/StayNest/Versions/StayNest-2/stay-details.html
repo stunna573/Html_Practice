@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stay Details | StayNest</title>
+<link href="./stay-details.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./site-effects.css">
+</head>
+<body>
+<header class="header">
+<nav class="navbar">
+<a class="logo" href="index.html">
+            🏠 StayNest
+        </a>
+<ul class="nav-links">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="destinations.html">Destinations</a>
+</li>
+<li class="active">
+<a href="stays.html">Stays</a>
+</li>
+<li>
+<a href="deals.html">Deals</a>
+</li>
+<li>
+<a href="find-booking.html">Find a Booking</a>
+</li>
+<li>
+<a href="contact.html">Contact</a>
+</li>
+</ul>
+<ul class="accounts">
+<li>
+<a href="stays.html?favorites=true">
+                    ♡ Favorites
+                </a>
+</li>
+<li>
+<a href="login.html">
+                    ◯ Sign in
+                </a>
+</li>
+<li class="menu">
+                ☰
+            </li>
+</ul>
+</nav>
+</header>
+<main>
+<!-- ================= BREADCRUMB ================= -->
+<section class="breadcrumb-section">
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+<span>›</span>
+<a href="stays.html">Stays</a>
+<span>›</span>
+<span id="breadcrumbStay">
+                Stay Details
+            </span>
+</div>
+</section>
+<!-- ================= STAY DETAILS ================= -->
+<section class="details-section">
+<div class="details-container">
+<!-- LEFT SIDE -->
+<div class="details-main">
+<div class="image-wrapper">
+<img alt="Stay" id="stayImage" src=""/>
+<button aria-label="Add to favorites" class="favorite-button" id="favoriteButton">
+                        ♡
+                    </button>
+</div>
+<div class="stay-heading">
+<div>
+<p class="stay-type" id="stayType">
+                            Resort
+                        </p>
+<h1 id="stayName">
+                            Stay Name
+                        </h1>
+<p class="location" id="stayLocation">
+                            📍 Location
+                        </p>
+</div>
+<div class="rating-box">
+<strong id="stayRating">
+                            4.8
+                        </strong>
+<span>
+                            ★
+                        </span>
+<small id="stayReviews">
+                            (2,425 reviews)
+                        </small>
+</div>
+</div>
+<!-- ================= ABOUT ================= -->
+<div class="detail-card">
+<h2>
+                        About this stay
+                    </h2>
+<p id="stayDescription">
+                        Discover a beautiful StayNest property
+                        designed for comfort, relaxation and
+                        unforgettable experiences.
+                    </p>
+<p>
+                        Enjoy comfortable rooms, excellent
+                        service and a convenient location.
+                        Whether you're travelling for relaxation,
+                        adventure or business, this stay gives
+                        you a comfortable place to call home
+                        during your trip.
+                    </p>
+</div>
+<!-- ================= AMENITIES ================= -->
+<div class="detail-card">
+<h2>
+                        What this place offers
+                    </h2>
+<div class="amenities">
+<div class="amenity">
+<span>📶</span>
+<p>Free Wi-Fi</p>
+</div>
+<div class="amenity">
+<span>🅿️</span>
+<p>Free parking</p>
+</div>
+<div class="amenity">
+<span>🏊</span>
+<p>Swimming pool</p>
+</div>
+<div class="amenity">
+<span>🍽️</span>
+<p>Restaurant</p>
+</div>
+<div class="amenity">
+<span>❄️</span>
+<p>Air conditioning</p>
+</div>
+<div class="amenity">
+<span>🛎️</span>
+<p>24/7 support</p>
+</div>
+</div>
+</div>
+<!-- ================= HIGHLIGHTS ================= -->
+<div class="detail-card">
+<h2>
+                        Why you'll love it
+                    </h2>
+<div class="highlights">
+<div>
+<span>✓</span>
+<p>Great location</p>
+</div>
+<div>
+<span>✓</span>
+<p>Highly rated by guests</p>
+</div>
+<div>
+<span>✓</span>
+<p>Comfortable accommodation</p>
+</div>
+<div>
+<span>✓</span>
+<p>Excellent service</p>
+</div>
+</div>
+</div>
+<!-- ================= LOCATION ================= -->
+<div class="detail-card">
+<h2>
+                        Location
+                    </h2>
+<div class="location-box">
+<div class="location-icon">
+                            📍
+                        </div>
+<div>
+<h3 id="locationTitle">
+                                Location
+                            </h3>
+<p>
+                                Explore the surrounding area
+                                and discover everything nearby.
+                            </p>
+</div>
+</div>
+</div>
+<!-- ================= POLICIES ================= -->
+<div class="detail-card">
+<h2>
+                        Stay policies
+                    </h2>
+<div class="policies">
+<div>
+<strong>Check-in</strong>
+<span>3:00 PM</span>
+</div>
+<div>
+<strong>Check-out</strong>
+<span>11:00 AM</span>
+</div>
+<div>
+<strong>Cancellation</strong>
+<span>Free cancellation available</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE / BOOKING CARD -->
+<aside class="booking-card">
+<div class="price-row">
+<div>
+<span class="price">
+                            $<span id="stayPrice">120</span>
+</span>
+<span class="per-night">
+                            / night
+                        </span>
+</div>
+<span class="rating-small">
+                        ★ <span id="smallRating">4.8</span>
+</span>
+</div>
+<div class="booking-summary">
+<div>
+<span>
+                            Check-in
+                        </span>
+<strong id="checkInDisplay">
+                            Select date
+                        </strong>
+</div>
+<div>
+<span>
+                            Check-out
+                        </span>
+<strong id="checkOutDisplay">
+                            Select date
+                        </strong>
+</div>
+<div>
+<span>
+                            Guests
+                        </span>
+<strong id="guestsDisplay">
+                            2 Adults
+                        </strong>
+</div>
+</div>
+<button class="book-button" id="bookButton">
+                    Book Now
+                </button>
+<p class="booking-note">
+                    You won't be charged yet.
+                </p>
+<div class="booking-features">
+<p>
+                        ✓ Free cancellation
+                    </p>
+<p>
+                        ✓ Secure booking
+                    </p>
+<p>
+                        ✓ No hidden fees
+                    </p>
+</div>
+</aside>
+</div>
+</section>
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+<div class="newsletter-icon">
+            ✉
+        </div>
+<div class="newsletter-text">
+<h2>
+                Get the best deals &amp; travel inspiration
+            </h2>
+<p>
+                Join our newsletter and save on your next adventure.
+            </p>
+</div>
+<form id="newsletterForm">
+<input id="newsletterEmail" placeholder="Enter your email" required="" type="email"/>
+<button type="submit">
+                Subscribe
+            </button>
+</form>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="footer-main">
+<div class="footer-brand">
+<a href="index.html">
+                🏠 StayNest
+            </a>
+<p>
+                Find your perfect stay anywhere.<br/>
+                Hotels, homes and more for<br/>
+                every kind of traveler.
+            </p>
+</div>
+<div class="footer-column">
+<h4>
+                Company
+            </h4>
+<a href="about.html">
+                About Us
+            </a>
+<a href="#">
+                Careers
+            </a>
+<a href="#">
+                Press
+            </a>
+<a href="#">
+                Blog
+            </a>
+</div>
+<div class="footer-column">
+<h4>
+                Explore
+            </h4>
+<a href="destinations.html">
+                Destinations
+            </a>
+<a href="stays.html">
+                Stays
+            </a>
+<a href="deals.html">
+                Deals
+            </a>
+</div>
+<div class="footer-column">
+<h4>
+                Support
+            </h4>
+<a href="contact.html">
+                Contact
+            </a>
+<a href="#">
+                Help Center
+            </a>
+<a href="#">
+                FAQs
+            </a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+            © 2026 StayNest. All rights reserved.
+        </p>
+<p>
+            Made with ❤️ for travelers
+        </p>
+</div>
+</footer>
+<script src="site-effects.js"></script>
+<script src="auth-nav.js"></script>
+<script src="./stay-details.js"></script>
+</body>
+</html>

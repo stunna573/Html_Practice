@@ -1,0 +1,931 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* main{
+    min-width:320px;
+} */
+ body{
+    overflow-x: hidden;
+ }
+li img{
+    align-items: center;
+    max-width: 100%;
+    display: block;
+}
+nav{
+    display: grid;
+    /* gap: 27%; */
+    min-height: 55px;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 5%;
+}
+.logo img{
+    justify-self: start;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display:none;
+} 
+#menu{
+    background-color: white;
+    border: none;
+}
+.Enquires{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-self: center;
+}
+.socials{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-self: end;
+}
+/* .sidebar{
+    display: block;
+} */
+.sidebar{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.493);
+    list-style: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 250px;
+    height: 80vh;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.229);
+    z-index: 1;
+    line-height: 2.5em;
+    padding: 15px;
+
+}
+#close_btn{
+  background-color: rgba(255, 255, 255, 0.493);
+    border: none;
+    backdrop-filter: blur(10px);
+}
+#menu{
+    display: none;
+}
+
+
+
+
+section{
+    width: 100%;
+    /* height: 100%; */
+    /* display: flex; */
+    /* gap: 32px; */
+    /* justify-content: center; */
+    margin-top: 30px;
+    /* background-color: aquamarine; */
+   
+}
+.section1{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    /* margin-left: 54em; */
+    display: flex;
+    /* background-color: brown; */
+}
+.center{
+    width: 90%;
+    /* height: 100%; */
+   position: relative;
+    max-width: 1400px;
+    margin-inline: auto;
+    display: flex;
+    /* background-color: black; */
+}
+.hero-info,
+.hero-image{
+    width: 50%;
+    height: 100%;
+    max-height: 40em;
+    /* background-color: aquamarine; */
+}
+#blue-background{
+    width:100%;
+    height:100%; 
+    /* object-fit: cover;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0%; */
+}
+#hot_recipe{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+}
+
+#spicy_chicken_wings{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    width: 32%;
+}
+#ketchup_wings{
+   width: 100%;
+   height: 100%; 
+   border-radius: 0px 40px 40px 0px;
+}
+#pargraph{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 40%;
+}
+#responsive-paragraph{
+    display: none;
+}
+#cooking_time{
+    position: absolute;
+    top: 61%;
+    left: 7%;
+}
+#cutlery{
+    position: absolute;
+    top: 61%;
+    left: 20%;
+}
+#john_smith{
+    position: absolute;
+    top: 77.5%;
+    left: 7%;
+}
+#view_recipes{
+    position: absolute;
+    top: 78%;
+    left: 30%;
+    width: 14%;
+    height: 9.3%;
+}
+#Badge{
+    position: absolute;
+    top: 10%;
+    left: 44.7%;
+    width: 11.5%;
+}
+.rectangle{
+    margin-top: 1em;
+    height: 0.1px;
+    width: 3%;
+} 
+.rectangle img{
+    width: 100%;
+}
+#section2{
+    padding: 100px 5% ;
+    /* display: block; */
+    /* margin-left: 2%; */
+    /* background-color: aqua; */
+}
+.section2_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 70.5%;
+    margin-left: 4%;
+    margin-top: 6em; */
+    
+}
+h2{
+    font-size: 2em;
+}
+.section2_header a{
+    background-color: #eafcfe;
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 12px;
+    /* background-color: #EAFCFE;
+    padding: 1em;
+    border-radius: 12px;
+    width: 11em; */
+}
+.section2_content{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 35px;
+    gap: 33px;
+    /* background-color: rgb(190, 237, 20); */
+    /* margin-left: 4%; */
+    
+}
+.section2_content img{
+    width: 100%;
+    height: 90%;
+}
+/* #breakfast{
+    width: 11.5em;
+    height: 11.5em;
+}
+#vegan{
+    width: 11.5em;
+    height: 11.5em; 
+}
+#meat{
+    width: 11.5em;
+    height: 11.5em;
+}
+#dessert{
+    width: 11.5em;
+    height: 11.5em;
+}
+#launch{
+    width: 11.5em;
+    height: 11.5em;
+}
+#chocolate{
+    width: 11.5em;
+    height: 11.5em;
+} */
+#section3{
+    /* display: block; */
+    padding: 100px 5% 0;
+    /* background-color: bisque; */
+}
+#section3_header{
+    text-align: center;
+    /* margin-top: 20px; */
+}
+#section3_paragraph{
+    max-width: 650px;
+    margin: 18px auto 0;
+    /* margin: 18px auto 0; */
+    /* margin-top: 18px; */
+    /* margin-left: 28%; */
+}
+#responsive_paragraph2{
+    display: none;
+}
+#section3_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 70px;
+    /* margin-left: 5.8% ; */
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: 70px auto 0; */
+    /* background-color: aquamarine; */
+}
+#section3_content img{
+    width: 100%;
+    /* height: 100%; */
+}
+#section4{
+    display: flex;
+    /* gap: 40px; */
+    padding: 100px 5%;
+    /* margin-left: 6em; */
+    margin-top: 6em;
+    width: 100%;
+    justify-content: space-between;
+}
+#section4_1stdiv{
+    justify-content: center ;
+    margin-top: 12em;
+}
+#section4_2nddiv{
+    width: 55%;
+    /* flex: 1; */
+}
+#chef{
+    width: 100%;
+    height: 100%;
+}
+#section4_header{
+    margin-bottom: 18px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.section4_paragraph{
+    /* width: 21.5em; */
+    margin: 18px auto 0;
+}
+#learn-more{
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 55px;
+    cursor: pointer;
+    /* border: none; */
+}
+#section5{
+    /* display: block; */
+    margin-top: 13em;
+    /* padding: 100px 5%; */
+    /* background-color: #EAF9FE; */
+    background-image: linear-gradient(to top, #EAF9FE , white);
+    padding: 70px 5%;
+    width: 100%;
+}
+#section5_1stdiv{
+    /* justify-content: center; */
+    
+}
+#section5_header{
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.section5_paragraph{
+    text-align: center;
+    margin-top: 19px;
+}
+#paragraph_1stdiv{
+   text-align: center; 
+}
+#paragraph_2nddiv{
+    text-align: center;
+}
+#responsive_paragraph3{
+    display: none;
+}
+#section5_2nddiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#section5_2nddiv img{
+    width: 100%;
+    /* margin-left: 2px; */
+}
+
+.ig{
+    /* margin-top: 90px; */
+    width: 18%;
+    /* margin-inline: auto; */
+    /* margin-left: 38em; */
+    margin: 90px auto 0;
+    
+}
+#section6{
+    /* display: block; */
+    margin-top: 13em;
+    padding: 100px 5%;
+    width: 100%;
+}
+#section6_header{
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin-inline: auto;
+
+    /* margin-left: 5.5em; */
+}
+#section6_paragraph{
+    max-width: 500px;
+}
+#section6_paragraph_1stdiv{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#section6_paragraph_2nddiv{
+    font-size: 15px;
+    font-weight: 400;
+}
+    
+#section6_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+#section6_content img{
+    width: 100%;
+    /* margin-left:5.5em; */
+    width: 100%;
+}
+.section7{
+    padding: 100px 5%;
+}
+#section7_1stdiv{
+    text-align: center;
+    background-color: #E7F9FD;
+    width: 100%;
+    /* margin-left: 5.1em; */
+    border-radius: 40px;
+    padding: 4em 0em 5em 0em;
+    position: relative;
+    margin-top: 80px;
+}
+#section7 h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+input[type="text"]{
+    padding: 15px;
+    width: 34%;
+    border-radius: 10px;
+    margin-top: 9em;
+}
+#salad{
+    width: 25%;
+    height: 16em;
+    position: absolute;
+    right: 75%;
+    bottom: 0.1em;
+    border-radius: 2.5em ;
+}
+#photo{
+    width: 25%;
+    height: 11em;
+    position: absolute;
+    right: 0em;
+    bottom: 0em;
+    border-radius: 1em;
+}
+#suscribe{
+    width: 9%;
+    height: 2.1em;
+    position: absolute;
+    right: 33.5%;
+    bottom:5.5em;
+}
+ #section7_2nddiv{
+    /* margin-left: 24px; */
+    margin-top: 5em;
+} 
+#section7_2nddiv img{
+    width: 60em;
+    height: 20em;
+} 
+
+footer{
+    margin-top: 100px;
+    padding: 100px 5% 0;
+    width: 100%;
+    /* background-color: aqua; */
+
+}
+footer img{
+    width: 35% ;
+    height: 35% ;
+}
+footer #first{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 42em; */
+    align-items: last baseline;
+    /* margin-left: 88px; */
+    padding: 2em 0em 2em 0em;
+    border-bottom: 1px solid;
+    width: 100%;
+   
+}
+footer div ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+#second{
+    display: flex;
+    align-items:last baseline;
+    /* justify-content: center; */
+
+    /* gap: 24.5em; */
+    /* margin-left: 34em; */
+    padding: 1em 0em 1em 0em;
+     /* background-color: aqua; */
+}
+#Flowbase{
+margin: auto;
+}
+.t{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+#second div img{
+    width: 20px;
+    height: 15px;
+    justify-content: space-around;
+    /* margin-left: 20px; */
+}
+span{
+    color: red;
+}
+#first ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+footer #first a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+a:link{
+    color: black;
+}
+
+@media (max-width: 425px) {
+/* nav{
+    display: flex;
+    gap: 14em ;
+    justify-content:start;
+    width: 23.9em;
+}
+
+.Enquires{
+    display: none;
+}
+.socials{
+    display: none;
+}
+.menu{
+    display:flex;
+} 
+.sidebar{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.493);
+    list-style: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 250px;
+    height: 80vh;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.229);
+    z-index: 1;
+    line-height: 2.5em;
+    padding: 15px;
+
+}
+#close_btn{
+    background-color: rgba(255, 255, 255, 0.493);
+    border: none;
+    backdrop-filter: blur(10px);
+}
+
+.rectangle{
+    display: none;
+} 
+
+#ketchup_wings{
+    display: none;
+}
+#Badge{
+   display: none;
+}
+
+.center{
+    margin: auto;
+}
+#blue-background{
+    width: 20em;
+    height: 38em;
+    justify-content: center;
+    margin-left: 0em;
+    border-radius: 2em;
+}
+#hot_recipe{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+}
+#spicy_chicken_wings{
+    top: 25%;
+    left: 15%;
+    width: 72%;
+     
+}
+#pargraph{
+   display: none;
+}
+#responsive-paragraph{
+    display:block;
+    position: absolute;
+    bottom:20em ;
+    width: 80%;
+    text-align: center;
+    left:10%;
+   
+}
+#cooking_time{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 35%;
+}
+#cutlery{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    width: 35%;
+}
+#john_smith{
+    position: absolute;
+    top: 77.5%;
+    left: 7%;
+    width: 40%;
+}
+#view_recipes{
+    position: absolute;
+    top: 78%;
+    left: 60%;
+    width: 30%;
+    height: 7.3%;
+    
+}
+
+
+
+
+
+
+.section2_header{
+    justify-content: center;
+    margin-top: 6em;
+    width: 20em;
+    margin-left: 3em;
+}
+#View_All_Categories{
+    display: none;
+}
+
+.section2_content{
+    display: grid;
+    flex-wrap: wrap;
+     grid-template-columns: repeat(2, 10em);
+    background-color: aqua;
+    width: 1em;
+    margin-left: 2em;
+}
+#breakfast{
+    width: 9.5em;
+    height: 9.5em;
+}
+#vegan{
+    width: 9.5em;
+    height: 9.5em; 
+}
+#meat{
+    width: 9.5em;
+    height: 9.5em;
+}
+#dessert{
+    width: 9.5em;
+    height: 9.5em;
+}
+#launch{
+    width: 9.5em;
+    height: 9.5em;
+}
+#chocolate{
+    width: 9.5em;
+    height: 9.5em;
+}
+
+#section3_paragraph{
+   display: none;
+}
+#responsive_paragraph2{
+    display: block;
+}
+
+#section3_content{
+    display:grid;
+    grid-template-columns: repeat(2, 10em);
+    width: 20em;
+    margin: auto;
+}
+#section3_content div img{
+    width: 10em;
+    height: 15em;
+}
+
+#chef{
+    width: 18.5em;
+    height: 25em;
+}
+#section4{
+    display: grid;
+   margin-left: 4em;
+}
+#section4_header{
+    margin-bottom: 18px;
+    font-size: 28px;
+}
+.section4_paragraph{
+    width: 10.5em;
+    background-color: aqua;
+}
+
+
+#section5_header{
+    text-align:start;
+}
+#paragraph_1stdiv{
+   text-align: start; 
+   width: 10em;
+}
+#paragraph_2nddiv{
+    text-align: start;
+}
+
+#section5{
+    display: block;
+    background-image: linear-gradient(to top, #EAF9FE , white);
+    width: 26.5em;
+}
+#section5_header{
+    text-align: center;
+    font-size: 28px;
+    width: 13em;
+    margin-left: 1.2em;
+}
+#paragraph_1stdiv{
+   display: none;
+}
+#paragraph_2nddiv{
+   display: none;
+}
+#responsive_paragraph3{
+    display: block;
+    width: 15em;
+    text-align: center;
+    margin-left: 5.5em;
+}
+#section5_2nddiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#section5_2nddiv img{
+    width: 10em;
+    height: 14em;
+    margin-left: 2px;
+}
+#ig{
+    margin-top: 90px;
+    margin-left: 8em;
+    width: 10em;
+}
+
+
+#section6_header{
+    display: block;
+    margin-left: 3em;
+}
+.sectin6_1stdiv_header div{
+    font-size: 28px;
+}
+#section6_paragraph_1stdiv{
+    display: none;
+}
+#section6_paragraph_2nddiv{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+#section6_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+   
+}
+#section6_content img{
+    width: 15em;
+    margin-left:5.5em;
+}
+
+
+#suscribe{
+    width: 6em;
+    height: 2.1em;
+    position: absolute;
+    right: 20.3em;
+    bottom:5.5em;
+}
+#section7_1stdiv{
+    width: 18em;
+    margin-left: 4.5em;
+}
+
+#section7 h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+#par
+input[type="text"]{
+    padding: 15px;
+    width: 1em;
+    border-radius: 10px;
+    margin-top: 9em;
+    background-color: aqua;
+}
+#salad{
+    display: none;
+}
+#photo{
+    display: none;
+}
+#suscribe{
+    width: 4em;
+    height: 2.1em;
+    right: 2.3em;
+    bottom:5.5em;
+}
+#section7_2nddiv{
+    margin-left: 24px;
+    margin-top: 5em;
+} 
+#section7_2nddiv img{
+    width: 60em;
+    height: 20em;
+} */
+
+
+
+/* 
+footer #first{
+    display: block;
+    gap: 1em;
+    align-items: last baseline;
+    margin-left: 1px;
+    padding: 2em 0em 2em 0em;
+    border-bottom: 1px solid;
+    width: 21em;
+   
+} */
+ /* #second{
+    display: block;
+    align-items:last baseline;
+    justify-content: center;
+    gap: 12.5em;
+    margin-left: 1em;
+    padding: 1em 0em 1em 0em;
+     background-color: aqua;
+}  */
+
+
+/* #section3_paragraph{
+    width: 40em;
+    margin-top: 18px;
+    margin-left: 5%;
+    background-color: aqua;
+} 
+ */
+
+
+
+}
+
+@media (max-width: 425px) {
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-inline: auto; */
+}  
+.Enquires{
+   display: none;
+}
+.socials{
+    display: none;
+}
+#menu{
+    display: flex;
+}.ig{
+    /* margin-top: 90px; */
+    width: 69%;
+    /* margin-inline: auto; */
+    /* margin-left: 38em; */
+    margin: 90px auto 0;
+    background-color: chartreuse;
+    
+}
+
+
+}

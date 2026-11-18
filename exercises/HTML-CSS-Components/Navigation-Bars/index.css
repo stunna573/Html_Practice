@@ -1,0 +1,48 @@
+*{
+    margin: none;
+    box-sizing: none;
+    padding: none;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20em;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+ul li{
+    list-style: none;
+}
+
+#contact{
+    background-color:blue ;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20em;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+#lol{
+    margin-top: 50px;
+}
+#lil{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+

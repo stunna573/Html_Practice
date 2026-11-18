@@ -1,0 +1,23 @@
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:black ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}

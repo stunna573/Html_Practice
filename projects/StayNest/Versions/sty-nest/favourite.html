@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites | StayNest</title>
+
+    <link rel="stylesheet" href="./favourite.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="home.html" class="logo">
+        Stay<span>Nest</span>
+    </a>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="stays.html">Stays</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="favorites.html" class="active">♡ Favorites</a>
+        <a href="login.html">◯ Sign in</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="favorites-hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">YOUR SAVED STAYS</p>
+
+        <h1>Your Favorites</h1>
+
+        <p>
+            Keep track of the places you love and come back to them
+            whenever you're ready to travel.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FAVORITES -->
+
+<main class="favorites-section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">SAVED FOR LATER</p>
+            <h2>My Favorite Stays</h2>
+        </div>
+
+        <span id="favoriteCount">0 stays</span>
+
+    </div>
+
+
+    <!-- EMPTY STATE -->
+
+    <div class="empty-state" id="emptyState">
+
+        <div class="empty-icon">♡</div>
+
+        <h2>No favorites yet</h2>
+
+        <p>
+            You haven't saved any stays yet.
+            Explore our stays and tap the heart icon to save your favorites.
+        </p>
+
+        <a href="stays.html" class="primary-btn">
+            Explore Stays
+        </a>
+
+    </div>
+
+
+    <!-- FAVORITE GRID -->
+
+    <div class="favorites-grid" id="favoritesGrid"></div>
+
+</main>
+
+
+<!-- CTA -->
+
+<section class="favorites-cta">
+
+    <div>
+
+        <p class="eyebrow">READY FOR YOUR NEXT TRIP?</p>
+
+        <h2>Find a place you'll love.</h2>
+
+        <p>
+            Discover beautiful stays in destinations around the world.
+        </p>
+
+        <a href="destinations.html" class="primary-btn">
+            Explore Destinations
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <div>
+            <p class="eyebrow">STAY IN THE LOOP</p>
+
+            <h2>Get travel inspiration</h2>
+
+            <p>
+                Subscribe for travel ideas, special deals and updates.
+            </p>
+        </div>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                Stay<span>Nest</span>
+            </a>
+
+            <p>
+                Your trusted companion for finding comfortable
+                and unforgettable stays around the world.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="stays.html">Stays</a>
+            <a href="deals.html">Deals</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Company</h3>
+
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Sign In</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 StayNest. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<div class="toast" id="toast"></div>
+
+
+<script src="./favorites.js"></script>
+
+</body>
+</html>

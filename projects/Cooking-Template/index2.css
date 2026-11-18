@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    gap: 19em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid;
+    padding: 25px;
+}
+#Enquires{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+ #Enquires li a{
+    text-decoration: none;
+    color: black;
+}
+#socials{
+    display: flex;
+    list-style: none;
+    gap: 21px;
+   
+}
+#socials li img{
+    width: 10px;
+    height: 1.2em;
+}
+header{
+    margin-top: 50px;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+}
+#john_smith{
+    justify-content: center;
+    margin-left: 29em;
+    margin-top: 20px;
+}
+p{
+    margin-top: 20px;
+}
+#header_1stdiv{
+    text-align: center;
+}
+#header_2nddiv{
+    text-align: center;
+}
+section img{
+    width: 65rem;
+    height: 25rem;
+    margin-left: 7em;
+    margin-top: 20px;
+}
+#section2{
+   margin-left: 12em;
+   margin-top: 60px;
+}
+#div1{
+    display: flex;
+}
+h4{
+    font-size: 20px;
+}
+h6{
+  margin-left: 6.9em;
+}
+#SHARE{
+    margin-left: 20px;
+}
+#SHARE img{
+    width: 10px;
+    height: 1.2em;
+    display: block;
+}
+#div2{
+    margin-top: 7em ;
+}
+#div3{
+    margin-top: 60px;
+}
+#days_off{
+    width: 44rem ;
+    height: 20rem ;
+    margin: 1.5em 10em 0em 0em;
+}
+#div4{
+    margin-top: 45px;
+}
+#div5{
+    width: 49em;
+    /* background-color: #F4F4F4; */
+   background-image: linear-gradient(to right , #F4F4F4 , white);
+   background-image: radial-gradient();
+    margin-top: 50px;
+}
+#div5 p{
+    font-size: 23px;
+    font-weight: normal;
+    padding: 30px;
+    width: 27em;
+}
+#div6{
+    margin-top: 45px;
+}
+#section3_1stdiv{
+    text-align: center;
+    background-color: #E7F9FD;
+    width: 60em;
+    margin-left: 8em;
+    border-radius: 40px;
+    padding: 3em 10em 3.5em 10em;
+    position: relative;
+    margin-top: 80px;
+}
+#section3 h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+input[type="text"]{
+    padding: 15px;
+    width: 33em;
+    border-radius: 10px;
+    margin-top: 4em;
+}
+#salad{
+    width: 16em;
+    height: 15em;
+    position: absolute;
+    right: 44em;
+    bottom: 0em;
+    border-radius: 40px;
+}
+#photo{
+    width: 16em;
+    height: 8em;
+    position: absolute;
+    right: 0em;
+    bottom: 0em;
+    border-radius: 40px;
+}
+#suscribe{
+    width: 6em;
+    height: 2.1em;
+    position: absolute;
+    right: 18.8em;
+    bottom: 3.9em;
+}
+#section3_2nddiv{
+    margin-left: 24px;
+    margin-top: 5em;
+
+} 
+#section3_2nddiv img{
+   width: 59.1em;
+} 
+footer{
+    margin-top: 100px;
+}
+footer img{
+    width: 6em ;
+    height: 1em ;
+}
+footer #first{
+    display: flex;
+    gap: 20em;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 120px;
+    padding: 0em 0em 2em 0em;
+    border-bottom: 1px solid;
+    width: 61em;
+}
+footer img{
+    margin-left: 7.5em;
+}
+footer div ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+#first ul li a{
+    text-decoration: none;
+    color: black;
+}
+#second{
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    gap: 8em;
+    margin-left: 19.8em;
+    padding: 1em 0em 1.5em 0em;
+}
+span{
+    color: red;
+}
+nav #Enquires a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+footer #first a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+a:link{
+    color: black;
+}
+
+

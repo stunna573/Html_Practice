@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Bookings | StayNest</title>
+<link href="./my-bookings.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+<a class="logo" href="home.html">
+            🏠 StayNest
+        </a>
+<nav class="nav-links">
+<a href="home.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="stays.html">Stays</a>
+<a href="deals.html">Deals</a>
+<a href="find-booking.html">Find a Booking</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a class="favorites-link" href="favorites.html">♡ Favorites</a>
+<a class="dashboard-link" href="dashboard.html">◯ Dashboard</a>
+<button class="menu-button" id="menuButton">
+                ☰
+            </button>
+</div>
+</header>
+<!-- HERO -->
+<section class="page-hero">
+<div class="hero-content">
+<span class="eyebrow">YOUR TRAVEL PLANS</span>
+<h1>My Bookings</h1>
+<p>
+                View and manage all the stays you've booked with StayNest.
+            </p>
+</div>
+</section>
+<!-- BOOKINGS SECTION -->
+<main class="bookings-section">
+<div class="section-heading">
+<div>
+<span class="section-label">RESERVATIONS</span>
+<h2>Your bookings</h2>
+</div>
+<a class="browse-button" href="stays.html">
+                Browse Stays →
+            </a>
+</div>
+<!-- BOOKINGS WILL BE INSERTED HERE -->
+<div class="bookings-list" id="bookingsList"></div>
+<!-- EMPTY STATE -->
+<div class="empty-state" id="emptyState">
+<div class="empty-icon">
+                🧳
+            </div>
+<h2>No bookings yet</h2>
+<p>
+                You haven't made any bookings yet.
+                Start exploring and find your perfect stay.
+            </p>
+<a class="primary-button" href="stays.html">
+                Explore Stays
+            </a>
+</div>
+</main>
+<!-- HELP SECTION -->
+<section class="help-section">
+<div class="help-content">
+<div>
+<span class="section-label">NEED HELP?</span>
+<h2>Looking for a booking?</h2>
+<p>
+                    You can also find a booking using your Booking ID and email address.
+                </p>
+</div>
+<a class="secondary-button" href="find-booking.html">
+                Find a Booking
+            </a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="logo" href="index.html">
+                    🏠 StayNest
+                </a>
+<p>
+                    Find your perfect stay anywhere.
+                    From cozy stays to luxury escapes.
+                </p>
+</div>
+<div class="footer-column">
+<h3>Company</h3>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-column">
+<h3>Support</h3>
+<a href="find-booking.html">Find a Booking</a>
+<a href="contact.html">Help Center</a>
+</div>
+<div class="footer-column">
+<h3>Explore</h3>
+<a href="destinations.html">Destinations</a>
+<a href="stays.html">Stays</a>
+<a href="deals.html">Deals</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 StayNest. All rights reserved.</p>
+<p>Made with ❤️ for travelers</p>
+</div>
+</footer>
+<script src="auth-nav.js"></script>
+<script src="./my-bookings.js"></script>
+</body>
+</html>

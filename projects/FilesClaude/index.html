@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BudgetBasics — Learn, Plan & Understand Your Money</title>
+<meta name="description" content="BudgetBasics is a free educational budgeting tool: plan your month, track expenses, set savings goals and ask BudgetBee.">
+<link rel="stylesheet" href="./style.css">
+<script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem('budgetbasics_theme'))||'light'}catch(e){}</script>
+<script defer src="./content.js"></script>
+<script defer src="./storage.js"></script>
+<script defer src="./app.js"></script>
+<script defer src="./chatbot.js"></script>
+</head>
+<body>
+<a class="skip" href="#plan">Skip to My Month</a>
+
+<header class="nav">
+  <div class="wrap navin">
+    <a class="logo" href="#home">🐝 BudgetBasics</a>
+    <nav id="links" aria-label="Main">
+      <a href="#home">Home</a><a href="#learn">Learn</a><a href="#plan">Plan</a><a href="#tools">Tools</a><a href="#about">About</a>
+    </nav>
+    <button class="icon" id="themeBtn" aria-label="Switch dark or light mode">🌓</button>
+    <a class="btn sm" href="#plan">Get Started</a>
+    <button class="icon" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="links">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <p class="badge">🐝 NextGen BudgetBee</p>
+      <h1>Your Money. Your Plan. Your Future.</h1>
+      <p class="lead">BudgetBasics helps you understand your money, plan your month, control your spending, and work toward the things you want.</p>
+      <form id="quick" class="quick" novalidate>
+        <label for="qInc">What is your monthly income? (₦)</label>
+        <div class="row"><input id="qInc" inputmode="decimal" placeholder="e.g. 200000" autocomplete="off"><button class="btn">Start My Budget</button></div>
+        <p class="err" id="qErr" role="alert"></p>
+      </form>
+      <a class="btn ghost" href="#learn">Explore Budgeting</a>
+    </div>
+    <aside class="card preview" aria-label="Live budget preview">
+      <p class="mut" id="clock"></p>
+      <h2 id="pvMonth">This month</h2>
+      <div class="pv"><span>Income</span><b id="pvIncome">₦0</b></div>
+      <div class="pv"><span>Spent</span><b id="pvSpent">₦0</b></div>
+      <div class="pv"><span>Remaining</span><b id="pvLeft">₦0</b></div>
+      <div class="bar" aria-hidden="true"><i id="pvBar"></i></div>
+      <p class="mut">Updates as you plan. Data stays in this browser.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="plan" class="wrap sec">
+  <h2>My Month</h2>
+  <p class="mut" id="monthLine"></p>
+  <div class="row acts">
+    <button class="btn sm" data-go="expForm">Add expense</button>
+    <button class="btn sm" data-go="goalForm">Add goal</button>
+    <button class="btn sm" data-go="incForm">Set income</button>
+    <button class="btn sm" data-go="pForm">Analyze purchase</button>
+    <button class="btn sm" id="openBee">Ask BudgetBee</button>
+    <button class="btn sm ghost" id="newMonth">Start new month</button>
+  </div>
+  <div class="grid" id="stats"></div>
+  <div class="card" id="pace"></div>
+
+  <div class="two">
+    <div class="card">
+      <h3>Income</h3>
+      <form id="incForm" novalidate>
+        <label for="inc">Total monthly income (allowance, salary, scholarship, other)</label>
+        <div class="row"><input id="inc" inputmode="decimal" placeholder="e.g. 200000"><button class="btn sm">Save income</button></div>
+        <p class="err" id="incErr" role="alert"></p>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Monthly analysis &amp; health check</h3>
+      <div id="insights"></div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="card">
+      <h3>Expenses</h3>
+      <form id="expForm" novalidate>
+        <input type="hidden" name="eid">
+        <div class="fgrid">
+          <div><label for="eDate">Date</label><input type="date" id="eDate" name="date"></div>
+          <div><label for="eCat">Category</label><select id="eCat" name="cat"></select></div>
+          <div><label for="eDesc">Description</label><input id="eDesc" name="desc" maxlength="60" placeholder="Lunch"></div>
+          <div><label for="eAmt">Amount (₦)</label><input id="eAmt" name="amt" inputmode="decimal" placeholder="2500"></div>
+        </div>
+        <p class="err" id="expErr" role="alert"></p>
+        <button class="btn sm" id="expBtn">Add expense</button>
+        <button type="button" class="btn sm ghost" id="expCancel" hidden>Cancel edit</button>
+      </form>
+      <ul class="list" id="expList"></ul>
+      <div id="catBars"></div>
+    </div>
+    <div class="card">
+      <h3>Savings goals</h3>
+      <form id="goalForm" novalidate>
+        <input type="hidden" name="geid">
+        <div class="fgrid">
+          <div><label for="gName">Goal</label><input id="gName" name="gname" list="gIdeas" maxlength="40" placeholder="Laptop"><datalist id="gIdeas"><option>Laptop<option>School Fees<option>Phone<option>Emergency Fund<option>Trip<option>Course<option>Business</datalist></div>
+          <div><label for="gTarget">Target (₦)</label><input id="gTarget" name="gtarget" inputmode="decimal"></div>
+          <div><label for="gSaved">Saved so far (₦)</label><input id="gSaved" name="gsaved" inputmode="decimal" placeholder="0"></div>
+          <div><label for="gMonthly">Monthly saving (₦)</label><input id="gMonthly" name="gmonthly" inputmode="decimal" placeholder="0"></div>
+        </div>
+        <p class="err" id="goalErr" role="alert"></p>
+        <button class="btn sm" id="goalBtn">Add goal</button>
+        <button type="button" class="btn sm ghost" id="goalCancel" hidden>Cancel edit</button>
+      </form>
+      <ul class="list" id="goalList"></ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Budget history</h3>
+    <ul class="list" id="history"></ul>
+    <button class="btn sm danger" id="resetBtn">Reset my budget</button>
+  </div>
+</section>
+
+<section id="learn" class="alt"><div class="wrap sec">
+  <h2>Learn the basics</h2>
+  <div class="grid" id="lessons"></div>
+  <h3>Money mistakes to spot early</h3>
+  <div id="mistakes"></div>
+  <div class="card tip"><p class="mut">Tip of the moment</p><p class="big" id="tipText" aria-live="polite"></p><button class="btn sm" id="nextTip">Next tip</button></div>
+</div></section>
+
+<section id="tools" class="wrap sec">
+  <h2>Tools</h2>
+  <div class="two">
+    <div class="card">
+      <h3>50/30/20 calculator</h3>
+      <form id="f503020" novalidate><label for="i503020">Monthly income (₦)</label>
+        <div class="row"><input id="i503020" inputmode="decimal"><button class="btn sm">Calculate</button></div></form>
+      <div id="r503020"></div>
+      <p class="mut">The 50/30/20 split is an educational budgeting guideline and may be adjusted according to individual circumstances.</p>
+    </div>
+    <div class="card">
+      <h3>Can I afford it?</h3>
+      <form id="pForm" novalidate>
+        <label for="pItem">What do you want to buy?</label><input id="pItem" maxlength="40">
+        <label for="pPrice">Price (₦)</label><input id="pPrice" inputmode="decimal">
+        <p class="err" id="pErr" role="alert"></p>
+        <button class="btn sm">Analyze purchase</button>
+      </form>
+      <div id="pResult" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Needs vs wants</h3>
+    <div id="quizBox"></div>
+  </div>
+</section>
+
+<section id="about" class="alt"><div class="wrap sec">
+  <h2>About &amp; FAQ</h2>
+  <p>BudgetBasics is a student-friendly learning project. It never connects to banks, and everything you enter stays in your browser.</p>
+  <div id="faq"></div>
+  <p class="notice">BudgetBasics is an educational budgeting tool. Calculations and information are provided for learning and planning purposes only and are not professional financial advice.</p>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <b>🐝 BudgetBasics</b> — Learn, plan &amp; understand your money.
+  <p><a href="#home">Home</a> · <a href="#learn">Learn</a> · <a href="#plan">Plan</a> · <a href="#tools">Tools</a> · <a href="#about">About</a></p>
+  <p>Contact (example): hello@budgetbasics.example · Privacy: no data leaves your browser.</p>
+  <p>Demo visit counter (this browser only): <b id="visits">1</b></p>
+  <p>© <span id="year"></span> BudgetBasics. Educational use only.</p>
+</div></footer>
+
+<!-- Fixed, viewport-attached BudgetBee -->
+<div class="bee">
+  <section id="beePanel" class="panel" hidden aria-label="BudgetBee chat">
+    <header><div><b>🐝 BudgetBee</b><small>Your budgeting assistant</small></div><button class="icon" id="beeClose" aria-label="Close chat">✕</button></header>
+    <div id="beeLog" class="log" role="log" aria-live="polite"></div>
+    <div id="beeChips" class="chips"></div>
+    <form id="beeForm"><label for="beeInput" class="sr">Ask BudgetBee</label><input id="beeInput" autocomplete="off" maxlength="200" placeholder="Ask about your budget…"><button class="btn sm">Send</button></form>
+    <small class="note">BudgetBee provides basic educational budgeting information and calculations based on the information you enter. It is not professional financial advice. Never share passwords, PINs or card numbers.</small>
+  </section>
+  <button id="beeBtn" class="beebtn" aria-label="Open BudgetBee chat" aria-expanded="false" aria-controls="beePanel">🐝</button>
+</div>
+
+<dialog id="dlg"><form method="dialog"><p id="dlgMsg"></p><button value="no" class="btn sm ghost">Cancel</button> <button value="yes" class="btn sm danger">Confirm</button></form></dialog>
+<div id="toasts" aria-live="polite"></div>
+</body>
+</html>

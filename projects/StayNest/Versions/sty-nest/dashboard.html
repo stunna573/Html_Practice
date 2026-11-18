@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | StayNest</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            🏠 StayNest
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="destinations.html">
+                Destinations
+            </a>
+
+            <a href="stays.html">
+                Stays
+            </a>
+
+            <a href="deals.html">
+                Deals
+            </a>
+
+            <a href="find-booking.html">
+                Find a Booking
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="account-links">
+
+            <a href="favorites.html">
+                ♡ Favorites
+            </a>
+
+            <a href="dashboard.html" class="active">
+                ◯ Dashboard
+            </a>
+
+            <button class="menu" id="menuButton">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Dashboard Hero -->
+
+        <section class="dashboard-hero">
+
+            <p class="eyebrow">
+                MY ACCOUNT
+            </p>
+
+            <h1>
+                Welcome back,
+                <span id="userName">Traveler</span> 👋
+            </h1>
+
+            <p>
+                Manage your bookings, favorites and
+                StayNest account from one place.
+            </p>
+
+        </section>
+
+
+        <!-- Dashboard Content -->
+
+        <section class="dashboard-content">
+
+
+            <!-- User Summary -->
+
+            <div class="profile-summary">
+
+                <div class="avatar" id="userInitial">
+                    T
+                </div>
+
+                <div>
+
+                    <h2 id="summaryName">
+                        Traveler
+                    </h2>
+
+                    <p id="summaryEmail">
+                        Not signed in
+                    </p>
+
+                </div>
+
+                <button
+                    id="logoutButton"
+                    class="logout-btn"
+                >
+                    Log out
+                </button>
+
+            </div>
+
+
+            <!-- Dashboard Cards -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- My Bookings -->
+
+                <a
+                    href="my-bookings.html"
+                    class="dashboard-card"
+                >
+
+                    <div class="card-icon">
+                        📖
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            My Bookings
+                        </h3>
+
+                        <p>
+                            View and manage your
+                            StayNest reservations.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Favorites -->
+
+                <a
+                    href="user_favourites.html"
+                    class="dashboard-card"
+                >
+
+                    <div class="card-icon">
+                        ♡
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Favorites
+                        </h3>
+
+                        <p>
+                            See the stays and destinations
+                            you've saved.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-card"
+                >
+
+                    <div class="card-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Profile
+                        </h3>
+
+                        <p>
+                            View and update your
+                            account information.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Find Booking -->
+
+                <a
+                    href="find-booking.html"
+                    class="dashboard-card"
+                >
+
+                    <div class="card-icon">
+                        🔎
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Find a Booking
+                        </h3>
+
+                        <p>
+                            Look up a reservation using
+                            its booking details.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+
+            <section class="quick-actions">
+
+                <h2>
+                    Ready for your next stay?
+                </h2>
+
+                <p>
+                    Explore new destinations and discover
+                    a place you'll love.
+                </p>
+
+                <div class="quick-buttons">
+
+                    <a href="stays.html">
+                        Browse Stays
+                    </a>
+
+                    <a href="destinations.html">
+                        Explore Destinations
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-main">
+
+
+            <div>
+
+                <h3>
+                    🏠 StayNest
+                </h3>
+
+                <p>
+                    Comfortable stays,
+                    unforgettable journeys.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="find-booking.html">
+                    Find a Booking
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="stays.html">
+                    Stays
+                </a>
+
+                <a href="deals.html">
+                    Deals
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 StayNest. All rights reserved.
+            </p>
+
+            <p>
+                Made with ❤️ for travelers
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./dashboard.js"></script>
+
+</body>
+</html>

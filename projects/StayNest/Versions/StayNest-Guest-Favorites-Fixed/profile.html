@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile | StayNest</title>
+<link href="./profile.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+<a class="logo" href="home.html">
+            🏠 StayNest
+        </a>
+<nav class="nav-links">
+<a href="home.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="stays.html">Stays</a>
+<a href="deals.html">Deals</a>
+<a href="find-booking.html">Find a Booking</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a href="favorites.html">
+                ♡ Favorites
+            </a>
+<a class="dashboard-link" href="dashboard.html">
+                ◯ Dashboard
+            </a>
+<button class="menu-button" id="menuButton">
+                ☰
+            </button>
+</div>
+</header>
+<!-- HERO -->
+<section class="page-hero">
+<div class="hero-content">
+<span class="eyebrow">ACCOUNT SETTINGS</span>
+<h1>My Profile</h1>
+<p>
+                Manage your StayNest account information.
+            </p>
+</div>
+</section>
+<!-- PROFILE -->
+<main class="profile-section">
+<div class="profile-layout">
+<!-- PROFILE SUMMARY -->
+<aside class="profile-card">
+<div class="avatar" id="profileInitial">
+                    A
+                </div>
+<h2 id="profileName">
+                    Traveler
+                </h2>
+<p id="profileEmail">
+                    traveler@example.com
+                </p>
+<div class="profile-divider"></div>
+<a href="dashboard.html">
+                    ◯ Dashboard
+                </a>
+<a href="my-bookings.html">
+                    My Bookings
+                </a>
+<a href="favorites.html">
+                    ♡ Favorites
+                </a>
+<button class="logout-button" id="logoutButton">
+                    Log Out
+                </button>
+</aside>
+<!-- EDIT PROFILE -->
+<section class="edit-card">
+<div class="card-heading">
+<span class="section-label">
+                        PERSONAL INFORMATION
+                    </span>
+<h2>Profile details</h2>
+<p>
+                        Update the information connected to your StayNest account.
+                    </p>
+</div>
+<form id="profileForm">
+<div class="form-group">
+<label for="fullName">
+                            Full Name
+                        </label>
+<input autocomplete="name" id="fullName" name="fullName" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">
+                            Email Address
+                        </label>
+<input autocomplete="email" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="account-id">
+<span>Account ID</span>
+<strong id="accountId">
+                            —
+                        </strong>
+</div>
+<p aria-live="polite" class="form-message" id="formMessage"></p>
+<button class="save-button" type="submit">
+                        Save Changes
+                    </button>
+</form>
+</section>
+</div>
+</main>
+<!-- HELP -->
+<section class="help-section">
+<div class="help-content">
+<div>
+<span class="section-label">
+                    NEED HELP?
+                </span>
+<h2>Have a question about your account?</h2>
+<p>
+                    We're here to help you with your StayNest experience.
+                </p>
+</div>
+<a class="secondary-button" href="contact.html">
+                Contact Us
+            </a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="logo" href="home.html">
+                    🏠 StayNest
+                </a>
+<p>
+                    Find your perfect stay anywhere.
+                    From cozy stays to luxury escapes.
+                </p>
+</div>
+<div class="footer-column">
+<h3>Company</h3>
+<a href="about.html">
+                    About Us
+                </a>
+<a href="contact.html">
+                    Contact
+                </a>
+</div>
+<div class="footer-column">
+<h3>Support</h3>
+<a href="find-booking.html">
+                    Find a Booking
+                </a>
+<a href="contact.html">
+                    Help Center
+                </a>
+</div>
+<div class="footer-column">
+<h3>Explore</h3>
+<a href="destinations.html">
+                    Destinations
+                </a>
+<a href="stays.html">
+                    Stays
+                </a>
+<a href="deals.html">
+                    Deals
+                </a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+                © 2026 StayNest. All rights reserved.
+            </p>
+<p>
+                Made with ❤️ for travelers
+            </p>
+</div>
+</footer>
+<script src="auth-nav.js"></script>
+<script src="./profile.js"></script>
+</body>
+</html>
+```

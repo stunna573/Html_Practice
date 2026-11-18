@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web || Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        section{
+            /* justify-content: center; */
+            /* margin-left: 40em; */
+            margin: 10em 30em;
+        }
+        #screen{
+            background-color: aliceblue;
+            width: 16em;
+            padding: 2.5em;
+            /* text-align: left; */
+            /* justify-content: left; */
+            border-radius: 0.5em 0.5em 0px 0px;
+            border: 1px solid;
+          
+        }
+        button{
+            /* padding: 20px;
+            grid-template-columns: 1fr auto 1fr;
+            border: none; */
+        }
+        /* #section1{
+          display: flex;
+
+         background-color: aqua;
+        }
+        #section1 button{
+           padding: 20px; 
+        }
+        #section2{
+           display: flex; 
+        }
+        #section2 button{
+         padding: 20px
+        }
+        #section3{
+           display: flex; 
+        }
+        #section4{
+           display: flex; 
+        }
+        #section5{
+          display: flex; 
+        } */
+        .yt{
+            grid-template-columns: repeat(4, 4em);
+            display: grid;
+            /* border: 1px solid; */
+            width: 16em;
+            border-radius: 10px;
+            /* background-color: bisque; */
+        }
+        button{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="screen"><textarea name="" id="yu"></textarea></div>
+            <div class="yt">
+              <button>AC</button>
+              <button>C</button>
+              <button>%</button>
+              <button>/</button>
+              <button>7</button>
+              <button>8</button>
+              <button>9</button>
+              <button>*</button> 
+              <button>4</button>
+              <button>5</button>
+              <button>6</button>
+              <button>-</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button onclick="addFun()">+</button>
+              <button>0</button>
+              <button>.</button>
+              <button>=</button>
+              <button>^</button>
+            </div>
+        </section>
+      <!-- <section>
+            <div id="screen"> ug</div>
+        <div id="section1">
+            <button>AC</button>
+            <button>C</button>
+            <button>%</button>
+            <button>/</button>
+        </div>
+        <div id="section2">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+        </div>
+        <div id="section3">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+        </div>
+        <div id="section4">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+        </div>
+        <div id="section5">
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+        </div>
+
+      </section>
+ -->
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | StayNest</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+<main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+                🏠 StayNest
+            </a>
+
+            <ul class="enquires">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li id="dest"><a href="destinations.html">Destinations</a></li>
+                <li><a href="stays.html">Stays</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="find-booking.html">Find a Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="accounts">
+                <li class="account-fav">
+                    <a href="favorites.html">♡ Favorites <span id="homeFavoriteCount">0</span></a>
+                </li>
+                <li class="account-signin">
+                    <a href="login.html">◯ Sign in</a>
+                </li>
+                <li class="menu" id="menuToggle" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Backdrop for mobile menu -->
+        <div class="nav-backdrop" id="navBackdrop"></div>
+
+
+        <div class="intro">
+
+            <h1>
+                Find your perfect <br>
+                stay anywhere
+            </h1>
+
+            <p>
+                Hotels, homes and more... <br>
+                From <span>cozy</span> stays to <span>luxury</span> escapes.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH BOX -->
+        <div class="questions">
+
+            <div class="internal">
+
+                <div class="search-field destination">
+
+                    <img src="./Assets/location.svg" alt="Location">
+
+                    <div>
+                        <h5>Where are you going?</h5>
+                        <input
+                            type="text"
+                            placeholder="Search destination"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <img src="./Assets/calender.svg" alt="Calendar">
+
+                    <div>
+                        <h5>Check-in</h5>
+
+                        <input
+                            type="date"
+                            value="2025-05-22"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <img src="./Assets/calender.svg" alt="Calendar">
+
+                    <div>
+                        <h5>Check-out</h5>
+
+                        <input
+                            type="date"
+                            value="2025-05-25"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <img src="./Assets/person.svg" alt="Guests">
+
+                    <div>
+                        <h5>Guests</h5>
+
+                        <select id="Guest">
+                            <option>2 Adults • 0 Children</option>
+                            <option>1 Adult • 0 Children</option>
+                            <option>2 Adults • 1 Child</option>
+                            <option>2 Adults • 2 Children</option>
+                            <option>3 Adults • 0 Children</option>
+                            <option>4 Adults • 0 Children</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <button id="Search">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section class="About">
+
+        <div class="feature">
+
+            <img src="./Assets/search.svg" alt="">
+
+            <div>
+                <h4>Best Price Guarantee</h4>
+                <p>
+                    We guarantee the best price<br>
+                    for your stay.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <img src="./Assets/secured.svg" alt="">
+
+            <div>
+                <h4>Trusted & Secure</h4>
+                <p>
+                    Your bookings and payments<br>
+                    are 100% secure.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <img src="./Assets/support.svg" alt="">
+
+            <div>
+                <h4>24/7 Support</h4>
+                <p>
+                    Our team is always here<br>
+                    to help you.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <img src="./Assets/calender.svg" alt="">
+
+            <div>
+                <h4>Free Cancellation</h4>
+                <p>
+                    Most of our stays offer<br>
+                    free cancellation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= POPULAR DESTINATIONS ================= -->
+    <section class="destination_section">
+
+        <div class="section-heading">
+
+            <h2>Popular Destinations</h2>
+
+            <a href="destinations.html">
+                View all destinations →
+            </a>
+
+        </div>
+
+
+        <div class="destination-grid">
+
+
+            <div class="destination-card">
+
+                <img src="./Assets/bali.jpeg" alt="Bali">
+
+                <div class="destination-info">
+                    <h4>Bali, Indonesia</h4>
+                    <p>⌖ 1,345 properties</p>
+                </div>
+
+            <button class="destination-favorite" type="button" aria-label="Add Bali, Indonesia to favorites">♡</button>
+</div>
+
+
+            <div class="destination-card">
+
+                <img src="./Assets/paris.jpeg" alt="Paris">
+
+                <div class="destination-info">
+                    <h4>Paris, France</h4>
+                    <p>⌖ 2,450 properties</p>
+                </div>
+
+            <button class="destination-favorite" type="button" aria-label="Add Paris, France to favorites">♡</button>
+</div>
+
+
+            <div class="destination-card">
+
+                <img src="./Assets/dubai.jpeg" alt="Dubai">
+
+                <div class="destination-info">
+                    <h4>Dubai, UAE</h4>
+                    <p>⌖ 1,676 properties</p>
+                </div>
+
+            <button class="destination-favorite" type="button" aria-label="Add Dubai, UAE to favorites">♡</button>
+</div>
+
+
+            <div class="destination-card">
+
+                <img src="./Assets/maldavies.jpeg" alt="Maldives">
+
+                <div class="destination-info">
+                    <h4>Maldives</h4>
+                    <p>⌖ 980 properties</p>
+                </div>
+
+            <button class="destination-favorite" type="button" aria-label="Add Maldives to favorites">♡</button>
+</div>
+
+
+            <div class="destination-card">
+
+                <img src="./Assets/newyork.jpeg" alt="New York">
+
+                <div class="destination-info">
+                    <h4>New York, USA</h4>
+                    <p>⌖ 2,120 properties</p>
+                </div>
+
+            <button class="destination-favorite" type="button" aria-label="Add New York, USA to favorites">♡</button>
+</div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TOP STAYS ================= -->
+    <section class="stays-section">
+
+        <div class="section-heading">
+
+            <h2>Top Stays</h2>
+
+            <a href="stays.html">
+                View all stays →
+            </a>
+
+        </div>
+
+
+        <div class="stays-grid">
+
+
+            <!-- STAY 1 -->
+            <div class="stay-card">
+
+                <div class="stay-image">
+
+                    <img src="./Assets/ocean_view.jpeg" alt="Oceanview Resort">
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <div class="stay-content">
+
+                    <h3>Oceanview Resort & Spa</h3>
+
+                    <p class="location">
+                        Bali, Indonesia
+                    </p>
+
+                    <p class="rating">
+                        <span>★</span> 4.8
+                        <small>(2,425 reviews)</small>
+                    </p>
+
+                    <p class="price">
+                        $120 <small>/ night</small>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STAY 2 -->
+            <div class="stay-card">
+
+                <div class="stay-image">
+
+                    <img src="./Assets/grand_paris.jpeg" alt="Grand Paris Hotel">
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <div class="stay-content">
+
+                    <h3>The Grand Paris Hotel</h3>
+
+                    <p class="location">
+                        Paris, France
+                    </p>
+
+                    <p class="rating">
+                        <span>★</span> 4.7
+                        <small>(2,356 reviews)</small>
+                    </p>
+
+                    <p class="price">
+                        $210 <small>/ night</small>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STAY 3 -->
+            <div class="stay-card">
+
+                <div class="stay-image">
+
+                    <img src="./Assets/maldavies_paradise_.jpeg" alt="Maldives Paradise">
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <div class="stay-content">
+
+                    <h3>Maldives Paradise</h3>
+
+                    <p class="location">
+                        Maldives
+                    </p>
+
+                    <p class="rating">
+                        <span>★</span> 4.9
+                        <small>(1,785 reviews)</small>
+                    </p>
+
+                    <p class="price">
+                        $350 <small>/ night</small>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STAY 4 -->
+            <div class="stay-card">
+
+                <div class="stay-image">
+
+                    <img src="./Assets/luxury_stay_.jpeg" alt="Luxury Stay Dubai">
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <div class="stay-content">
+
+                    <h3>Luxury Stay Dubai</h3>
+
+                    <p class="location">
+                        Dubai, UAE
+                    </p>
+
+                    <p class="rating">
+                        <span>★</span> 4.6
+                        <small>(1,102 reviews)</small>
+                    </p>
+
+                    <p class="price">
+                        $160 <small>/ night</small>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STAY 5 -->
+            <div class="stay-card">
+
+                <div class="stay-image">
+
+                    <img src="./Assets/blue_horizon.jpeg" alt="Blue Horizon Hotel">
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <div class="stay-content">
+
+                    <h3>Blue Horizon Hotel</h3>
+
+                    <p class="location">
+                        New York, USA
+                    </p>
+
+                    <p class="rating">
+                        <span>★</span> 4.7
+                        <small>(1,932 reviews)</small>
+                    </p>
+
+                    <p class="price">
+                        $190 <small>/ night</small>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SPECIAL OFFER ================= -->
+    <section class="offer">
+
+        <div class="offer-image">
+
+            <img src="./Assets/offer.jpeg" alt="Special offer">
+
+        </div>
+
+
+        <div class="offer-text">
+
+            <p>Special Offer</p>
+
+            <h2>
+                Get 20% off on your<br>
+                first booking!
+            </h2>
+
+            <span>
+                Use code:
+                <strong>STAYNEST20</strong>
+            </span>
+
+        </div>
+
+
+        <div class="countdown">
+
+            <div>
+                <strong id="homeDays">02</strong>
+                <small>Days</small>
+            </div>
+
+            <div>
+                <strong id="homeHours">14</strong>
+                <small>Hours</small>
+            </div>
+
+            <div>
+                <strong id="homeMinutes">36</strong>
+                <small>Mins</small>
+            </div>
+
+            <div>
+                <strong id="homeSeconds">48</strong>
+                <small>Secs</small>
+            </div>
+
+        </div>
+
+
+        <button class="book-button">
+            <a href="deals.html">Book Now</a>
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="reviews-section">
+
+        <div class="section-heading">
+
+            <h2>What our guests say</h2>
+
+            <a href="about.html">
+                View all reviews →
+            </a>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+
+            <div class="review-card">
+
+                <div class="review-person">
+
+                    <div class="avatar">
+                        <img id="sop" src="./Assets/Sophie_i.jpeg" alt="">
+                    </div>
+
+                    <div>
+                        <h4>Sophia Williams</h4>
+                        <p>Paris, France</p>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p class="review-text">
+                    Amazing stay! Everything was perfect from
+                    check-in to check-out. Highly recommend!
+                </p>
+
+            </div>
+
+
+
+            <div class="review-card">
+
+                <div class="review-person">
+
+                    <div class="avatar">
+                        <img id="sop" src="./Assets/james_.jpeg" alt="">
+                    </div>
+
+                    <div>
+                        <h4>James Anderson</h4>
+                        <p>New York, USA</p>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p class="review-text">
+                    The location was ideal and the service was
+                    outstanding. Will definitely come back.
+                </p>
+
+            </div>
+
+
+
+            <div class="review-card">
+
+                <div class="review-person">
+
+                    <div class="avatar">
+                        <img id="sop" src="./Assets/olivia_.jpeg" alt="">
+                    </div>
+
+                    <div>
+                        <h4>Olivia Brown</h4>
+                        <p>Bali, Indonesia</p>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p class="review-text">
+                    The view was breathtaking and the staff
+                    was so friendly. 10/10!
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+
+        <div class="newsletter-icon">
+            ✉
+        </div>
+
+        <div class="newsletter-text">
+
+            <h2>Get the best deals & travel inspiration</h2>
+
+            <p>
+                Join our newsletter and save on your next adventure.
+            </p>
+
+        </div>
+
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+            >
+
+            <button>
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    🏠 StayNest
+                </a>
+
+                <p>
+                    Find your perfect stay anywhere.<br>
+                    Hotels, homes and more for<br>
+                    every kind of traveler.
+                </p>
+
+                <div class="socials">
+                    ● &nbsp; ◎ &nbsp; ● &nbsp; ▶
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="about.html">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Blog</a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <a href="#">Help Center</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQs</a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="destinations.html">Destinations</a>
+                <a href="stays.html">Stays</a>
+                <a href="deals.html">Deals</a>
+                <a href="#">Travel Guide</a>
+
+            </div>
+
+
+
+            <div class="app-section">
+
+                <h4>Download our app</h4>
+
+                <div class="app-buttons">
+
+                    <button> App Store</button>
+
+                    <button>▶ Google Play</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 StayNest. All rights reserved.
+            </p>
+
+            <p>
+                Made with ❤️ for travelers
+            </p>
+
+        </div>
+
+    </footer>
+
+</main>
+
+<script src="auth-nav.js"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find a Booking | StayNest</title>
+
+    <link rel="stylesheet" href="./find-booking.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="site-header">
+
+            <nav class="navbar">
+
+                <a href="home.html" class="logo">
+                    🏠 StayNest
+                </a>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="stays.html">
+                            Stays
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="deals.html">
+                            Deals
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="find-booking.html">
+                            Find a Booking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="account-links">
+
+                    <a href="favorites.html">
+                        ♡ Favorites
+                    </a>
+
+                    <a href="login.html">
+                        ◯ Sign in
+                    </a>
+
+                    <button
+                        class="menu-button"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+                </div>
+
+            </nav>
+
+
+            <!-- MOBILE MENU -->
+
+            <div class="mobile-menu">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="stays.html">
+                    Stays
+                </a>
+
+                <a href="deals.html">
+                    Deals
+                </a>
+
+                <a href="find-booking.html">
+                    Find a Booking
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="favorites.html">
+                    ♡ Favorites
+                </a>
+
+                <a href="login.html">
+                    ◯ Sign in
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="booking-hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    YOUR RESERVATION
+                </p>
+
+                <h1>
+                    Find your booking
+                </h1>
+
+                <p>
+                    Enter your booking ID and email address
+                    to view your reservation details.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FIND BOOKING ================= -->
+
+        <section class="find-booking-section">
+
+            <div class="find-booking-card">
+
+                <div class="card-icon">
+                    🎫
+                </div>
+
+                <h2>
+                    Look up your reservation
+                </h2>
+
+                <p class="card-description">
+                    You can find a guest booking using the
+                    booking ID and email address used when
+                    making the reservation.
+                </p>
+
+
+                <form id="findBookingForm">
+
+                    <div class="form-group">
+
+                        <label for="bookingId">
+                            Booking ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bookingId"
+                            placeholder="e.g. SN-7K4P92QX"
+                            autocomplete="off"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="bookingEmail"
+                            placeholder="Enter the email used for booking"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="find-button"
+                    >
+                        Find Booking
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="bookingMessage"
+                    class="booking-message"
+                ></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOOKING RESULT ================= -->
+
+        <section
+            class="booking-result-section"
+            id="bookingResultSection"
+            hidden
+        >
+
+            <div class="booking-result-card">
+
+                <div class="result-header">
+
+                    <div>
+
+                        <p class="result-label">
+                            BOOKING FOUND
+                        </p>
+
+                        <h2 id="resultStayName">
+                            Stay Name
+                        </h2>
+
+                        <p id="resultLocation">
+                            Location
+                        </p>
+
+                    </div>
+
+                    <div class="confirmed-badge">
+                        ✓ Confirmed
+                    </div>
+
+                </div>
+
+
+                <div class="result-image-wrapper">
+
+                    <img
+                        id="resultImage"
+                        src=""
+                        alt="Booked stay"
+                    >
+
+                </div>
+
+
+                <div class="booking-info-grid">
+
+                    <div class="info-item">
+
+                        <span>
+                            Booking ID
+                        </span>
+
+                        <strong id="resultBookingId">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Guest
+                        </span>
+
+                        <strong id="resultGuestName">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Check-in
+                        </span>
+
+                        <strong id="resultCheckIn">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Check-out
+                        </span>
+
+                        <strong id="resultCheckOut">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Guests
+                        </span>
+
+                        <strong id="resultGuests">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Rooms
+                        </span>
+
+                        <strong id="resultRooms">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Nights
+                        </span>
+
+                        <strong id="resultNights">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Rating
+                        </span>
+
+                        <strong id="resultRating">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="total-section">
+
+                    <div>
+
+                        <span>
+                            Total
+                        </span>
+
+                        <small>
+                            Your reservation total
+                        </small>
+
+                    </div>
+
+                    <strong id="resultTotal">
+                        $0
+                    </strong>
+
+                </div>
+
+
+                <div class="result-actions">
+
+                    <a
+                        href="stays.html"
+                        class="secondary-button"
+                    >
+                        Browse Stays
+                    </a>
+
+                    <a
+                        href="home.html"
+                        class="primary-button"
+                    >
+                        Back to Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HELP ================= -->
+
+        <section class="booking-help">
+
+            <div>
+
+                <h2>
+                    Can't find your booking?
+                </h2>
+
+                <p>
+                    Make sure you're using the same
+                    email address that was entered when
+                    the booking was made.
+                </p>
+
+            </div>
+
+            <a href="contact.html">
+                Contact Support →
+            </a>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="home.html"
+                        class="footer-logo"
+                    >
+                        🏠 StayNest
+                    </a>
+
+                    <p>
+                        Find your perfect stay anywhere.<br>
+                        Hotels, homes and more for<br>
+                        every kind of traveler.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Company
+                    </h4>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="#">
+                        Careers
+                    </a>
+
+                    <a href="#">
+                        Press
+                    </a>
+
+                    <a href="#">
+                        Blog
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Support
+                    </h4>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="find-booking.html">
+                        Find a Booking
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Explore
+                    </h4>
+
+                    <a href="destinations.html">
+                        Destinations
+                    </a>
+
+                    <a href="stays.html">
+                        Stays
+                    </a>
+
+                    <a href="deals.html">
+                        Deals
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 StayNest. All rights reserved.
+                </p>
+
+                <p>
+                    Made with ❤️ for travelers
+                </p>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="./find-booking.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign In | StayNest</title>
+<link href="./login.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header class="header">
+<nav class="navbar">
+<a class="logo" href="home.html">
+                🏠 StayNest
+            </a>
+<ul class="nav-links">
+<li>
+<a href="home.html">
+                        Home
+                    </a>
+</li>
+<li>
+<a href="destinations.html">
+                        Destinations
+                    </a>
+</li>
+<li>
+<a href="stays.html">
+                        Stays
+                    </a>
+</li>
+<li>
+<a href="deals.html">
+                        Deals
+                    </a>
+</li>
+<li>
+<a href="find-booking.html">
+                        Find a Booking
+                    </a>
+</li>
+<li>
+<a href="contact.html">
+                        Contact
+                    </a>
+</li>
+</ul>
+<div class="header-link">
+<a href="signup.html">
+                    Create account
+                </a>
+</div>
+</nav>
+</header>
+<!-- ================= LOGIN PAGE ================= -->
+<main class="login-page">
+<section class="login-card">
+<div class="login-heading">
+<p class="eyebrow">
+                    WELCOME BACK
+                </p>
+<h1>
+                    Sign in to StayNest
+                </h1>
+<p>
+                    Access your bookings, favorites and account.
+                </p>
+</div>
+<!-- ================= FORM ================= -->
+<form id="loginForm">
+<div class="form-group">
+<label for="email">
+                        Email address
+                    </label>
+<input id="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">
+                        Password
+                    </label>
+<input id="password" placeholder="Enter your password" required="" type="password"/>
+</div>
+<p class="form-message" id="formMessage"></p>
+<button class="login-button" type="submit">
+                    Sign In
+                </button>
+</form>
+<p class="signup-text">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Create one
+                </a>
+</p>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+<p>
+            © 2026 StayNest. All rights reserved.
+        </p>
+<p>
+            Made with ❤️ for travelers
+        </p>
+</footer>
+<script src="auth-nav.js"></script>
+<script src="./login.js"></script>
+</body>
+</html>

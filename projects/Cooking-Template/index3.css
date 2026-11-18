@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    gap: 19em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid;
+    padding: 25px;
+}
+li img{
+    align-items: center;
+}
+#Enquires{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+#Enquires li a{
+    text-decoration: none;
+    color: black;
+}
+#socials{
+    display: flex;
+    list-style: none;
+    gap: 21px;
+}
+h1{
+   text-align: center;
+   margin-top: 1.5em;
+   font-size: 2.5em;
+   font-style: normal;
+}
+#div1{
+    display: flex;
+    gap: 3em;
+}
+#div2{
+    display: flex;
+    gap: 3em;
+}
+input{
+    width: 27em;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+#Advertising{
+    width: 27em;
+    height:3em ;
+    background-color: white;
+}
+textarea{
+    width: 58em;
+    height: 15em;
+    border-radius: 1em;
+    
+}
+button{
+    padding: 15px 40px 15px 40px;
+    border-radius: 1em ;
+    color: white;
+    background-color: black;
+    margin-top:3em;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.2em;
+    gap: 40px;
+}
+#section1{
+    text-align: center;
+    background-color: #E7F9FD;
+    width: 68.2em;
+    margin-left: 5.2em;
+    border-radius: 40px;
+    padding: 3em 10em 3.5em 10em;
+    position: relative;
+    margin-top: 80px;
+}
+#section1 h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+#section1 div input[type="text"]{
+    padding: 15px;
+    width: 33em;
+    border-radius: 10px;
+    margin-top: 4em;
+}
+#salad{
+    width: 16em;
+    height: 15em;
+    position: absolute;
+    right: 52.2em;
+    bottom: 0em;
+    border-radius: 40px;
+}
+#photo{
+    width: 16em;
+    height: 8em;
+    position: absolute;
+    right: 0em;
+    bottom: 0em;
+    border-radius: 40px;
+}
+#suscribe{
+    width: 6em;
+    height: 2.1em;
+    position: absolute;
+    right: 23em;
+    bottom: 4.6em;
+}
+
+#section2{
+    margin-left: 5.2em;
+    margin-top: 5em;
+} 
+#section2 img{
+    width: 68.2em;
+    height: 20em;
+}
+
+footer{
+    margin-top: 100px;
+}
+footer img{
+    width: 6em ;
+    height: 1em ;
+}
+footer #first{
+    display: flex;
+    gap: 27.6em;
+    align-items: last baseline;
+    /* justify-content: center; */
+    margin-left: 5em;
+    padding: 2em 0em 2em 0em;
+    border-bottom: 1px solid;
+    width: 68.5em;
+}
+#food{
+   margin-bottom: 0.5em;
+}
+footer div ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+ #first li a{
+    text-decoration: none;
+    color: black;
+ }
+#second{
+    display: flex;
+    /* align-items:last baseline; */
+    gap: 19.9em;
+    margin-left: 30em;
+    padding: 1.3em 0em 1.3em 0em;
+}
+span{
+    color: red;
+}
+nav #Enquires a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+footer #first a:hover{
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+a:link{
+    color: black;
+}
+
+

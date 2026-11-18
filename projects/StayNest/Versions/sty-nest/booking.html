@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | StayNest</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">🏠 StayNest</a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="stays.html">Stays</a>
+      <a href="deals.html">Deals</a>
+      <a href="find-booking.html">Find a Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="favorites.html">♡ Favorites</a>
+      <a href="login.html" id="accountLink">◯ Sign in</a>
+      <button class="menu" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="booking-page">
+    <div class="page-heading">
+      <a href="stays.html" class="back-link">← Back to stays</a>
+      <h1>Complete your booking</h1>
+      <p>Reserve your stay in just a few steps.</p>
+    </div>
+
+    <div class="booking-layout" id="bookingLayout">
+
+      <div class="booking-left">
+        <div class="stay-card">
+          <img id="stayImage" src="./Assets/hero.jpeg" alt="Selected stay">
+          <div class="stay-card-content">
+            <span class="stay-label">YOUR STAY</span>
+            <h2 id="stayName">StayNest Property</h2>
+            <p id="stayLocation">Location</p>
+            <p class="stay-rating">★ <span id="stayRating">4.8</span></p>
+            <p class="stay-price"><strong id="stayPrice">$120</strong> / night</p>
+          </div>
+        </div>
+
+        <div class="deal-notice" id="dealNotice" hidden></div>
+
+        <form class="booking-form" id="bookingForm">
+          <div class="form-section">
+            <h2>Your trip</h2>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="checkIn">Check-in</label>
+                <input type="date" id="checkIn" required>
+              </div>
+
+              <div class="field">
+                <label for="checkOut">Check-out</label>
+                <input type="date" id="checkOut" required>
+              </div>
+
+              <div class="field">
+                <label for="guests">Guests</label>
+                <select id="guests" required>
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="rooms">Rooms</label>
+                <select id="rooms" required>
+                  <option value="1" selected>1 Room</option>
+                  <option value="2">2 Rooms</option>
+                  <option value="3">3 Rooms</option>
+                  <option value="4">4 Rooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2>Guest details</h2>
+
+            <div class="form-grid">
+              <div class="field full">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="field full">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+          </div>
+
+          <button class="book-button" type="submit">Confirm booking</button>
+        </form>
+      </div>
+
+      <aside class="summary-card">
+        <h2>Price summary</h2>
+
+        <div class="summary-row">
+          <span>Stay</span>
+          <strong id="summaryStay">StayNest Property</strong>
+        </div>
+
+        <div class="summary-row">
+          <span>Dates</span>
+          <span id="summaryDates">Select your dates</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Guests</span>
+          <span id="summaryGuests">2 Guests</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Rooms</span>
+          <span id="summaryRooms">1 Room</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Nightly price</span>
+          <span id="summaryNightly">$120</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Nights</span>
+          <span id="summaryNights">0</span>
+        </div>
+
+        <div class="summary-row deal-discount-row" id="dealDiscountRow" hidden>
+          <span>Deal discount</span>
+          <strong id="summaryDiscount">-$0</strong>
+        </div>
+
+        <div class="summary-total">
+          <span>Total</span>
+          <strong id="summaryTotal">$0</strong>
+        </div>
+
+        <p class="summary-note">Free cancellation on eligible stays.</p>
+      </aside>
+
+    </div>
+
+    <section class="confirmation" id="confirmation" hidden>
+      <div class="confirmation-icon">✓</div>
+      <span class="stay-label">BOOKING CONFIRMED</span>
+      <h2>Your stay is reserved!</h2>
+      <p>We've saved your booking details. Keep your Booking ID somewhere safe.</p>
+
+      <div class="confirmation-details">
+        <div>
+          <span>Booking ID</span>
+          <strong id="bookingId"></strong>
+        </div>
+        <div>
+          <span>Stay</span>
+          <strong id="confirmedStay"></strong>
+        </div>
+        <div>
+          <span>Dates</span>
+          <strong id="confirmedDates"></strong>
+        </div>
+        <div>
+          <span>Total</span>
+          <strong id="confirmedTotal"></strong>
+        </div>
+      </div>
+
+      <div class="confirmation-actions">
+        <a href="find-booking.html" class="primary-action">Find a Booking</a>
+        <a href="stays.html" class="secondary-action">Browse more stays</a>
+        <a href="index.html" class="secondary-action">Back home</a>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 StayNest. All rights reserved.</p>
+  <p>Made with ❤️ for travelers</p>
+</footer>
+
+<script src="booking.js"></script>
+</body>
+</html>
